@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 0.1fr 1fr 0.9fr; 
+    background-color: #0583F2;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.current-weather {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    place-items: center;
+}
+
+.temp-and-icon {
+    height: 70%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: solid 2px black;
+    cursor: default;
+}
+
+.extra-data {
+    height: 70%;
+    width: 75%;
+    border: solid 2px black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.temp {
+    font-size: 9em;
+}
+
+.degree-symbol {
+    font-size: 0.5em;
+    float: right;
+}

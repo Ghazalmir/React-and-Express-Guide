@@ -1,9 +1,10 @@
 import './App.css';
+import WeatherApp from './pages/page04/weather-app';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world!</h1>
+      <WeatherApp></WeatherApp>
     </div>
   );
 }
