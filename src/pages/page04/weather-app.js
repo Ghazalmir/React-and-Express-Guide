@@ -3,21 +3,25 @@ import { useState } from "react";
 
 import "./weather-app-styles.css";
 import { WiDaySunny } from "react-icons/wi";
+import DayForecastCard from "./page4-components/day-forecast-card";
 
 const WeatherApp = () => {
-
-
 	return (
 		<div>
 			<div className="main-container">
-				<div className="nav">
-					<p>nav</p>
-				</div>
+				<nav className="nav-container">
+					<p>nav here</p>
+				</nav>
 				<div className="current-weather">
-					<div className="temp-and-icon">
-						<WiDaySunny size={400}></WiDaySunny>
-						<div className="temp">
-							<h2>21 <span className="degree-symbol">&deg;C</span></h2>
+					<div className="temp-and-icon-and-location">
+						<div className="location">
+							<h3>Toronto, Ontario</h3>
+						</div>
+						<div className="temp-and-icon">
+							<WiDaySunny size={400}></WiDaySunny>
+							<div className="temp">
+								<h2>21</h2>
+							</div>
 						</div>
 					</div>
 					<div className="extra-data">
@@ -28,7 +32,11 @@ const WeatherApp = () => {
 					</div>
 				</div>
 				<div className="week-forecast">
-					<h3>DATA HERE</h3>
+					<DayForecastCard></DayForecastCard>
+					<DayForecastCard></DayForecastCard>
+					<DayForecastCard></DayForecastCard>
+					<DayForecastCard></DayForecastCard>
+					<DayForecastCard></DayForecastCard>
 				</div>
 			</div>
 		</div>

@@ -6,6 +6,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
     min-height: 100vh;
+    font-size: 20px;
 }
 
 .main-container {
@@ -26,16 +27,33 @@ html, body {
     place-items: center;
 }
 
-.temp-and-icon {
+.temp-and-icon-and-location {
     height: 70%;
     width: 75%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    border: solid 2px black;
+    /* border: solid 2px black; */
+    display: grid;
+    grid-template-rows: 0.05fr 1.5fr;
+    padding: 2em;
+}
+
+.location {
+    padding-left: 4em;
+}
+.location h3 {
+    font-size: 62px;
+    font-weight: 900;
+}
+
+h2,h3 {
+    margin: 0;
+}
+
+
+.temp-and-icon {
     cursor: default;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .extra-data {
@@ -50,9 +68,26 @@ html, body {
 
 .temp {
     font-size: 9em;
+    display: flex;
 }
 
-.degree-symbol {
-    font-size: 0.5em;
-    float: right;
+.temp::after {
+    content: "\00b0 C";
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+}
+
+
+.week-forecast {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.day-forecast {
+    height: 70%;
+    width: 300px;
+    border: 2px solid black;
 }
