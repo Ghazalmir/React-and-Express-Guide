@@ -1,9 +1,12 @@
 import './App.css';
+import Btn from './components/button/button'
+import CustomNavbar from './components/navbar/navbar'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello world!</h1>
+      <CustomNavbar />
+
     </div>
   );
 }
