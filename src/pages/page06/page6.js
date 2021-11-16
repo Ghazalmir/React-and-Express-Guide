@@ -1,4 +1,4 @@
-import './page6.css';
+import styles from './page6.module.css';
 import CreditsCard from './card';
 
 
@@ -41,7 +41,7 @@ function Page6(){
       linkedin={member.linkedin}
         />) )}
       
-      <div className="ref">
+      <div className={styles.ref}>
       <h3>References</h3>
       <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quod a voluptate debitis quas fugiat iure eos officiis aspernatur? Doloribus consequuntur excepturi dolorum necessitatibus, maiores corporis iste ducimus perspiciatis quo. Dolor officiis quasi doloribus autem, modi quod odio doloremque eos pariatur fugit, exercitationem similique, soluta necessitatibus. Harum dolorem fugiat illo aliquam recusandae? Eius voluptatum repudiandae atque minus consequuntur ipsum deleniti.
