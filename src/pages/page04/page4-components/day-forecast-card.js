@@ -1,10 +1,11 @@
 import React from "react";
-// import "./day-forecast-card-styles.css";
+import styles from "./day-forecast-card-styles.module.css";
 
-const DayForecastCard = () => {
+const DayForecastCard = ({day, temp}) => {
 	return (
-		<div className="day-forecast">
-			<h3>Data</h3>
+		<div className={styles.dayForecastCard}>
+			<h3>{day}</h3>
+			<h3>{temp}</h3>
 		</div>
 	);
 };
