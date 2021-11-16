@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: #0d0d0d;
+}
+
+.ref{
+  margin-bottom: 50px !important;
+  color: #0d0d0d;
+  background-color: #fff;
+	border-radius: 10px;
+  border: 2px solid #f3f2f2;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	max-width: 100%;
+	margin: auto;
+	overflow: hidden;
+	width: 70%;
+  padding: 30px;
+}
+.ref h3{
+  text-align: center;
+}
