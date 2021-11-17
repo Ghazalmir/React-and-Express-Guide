@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap");
+
+.mainContainer {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-height: 100vh;
+    font-size: 16px;
+}
+
+.textContainer {
+    font-size: 1em;
+	margin: 0 auto;
+    margin-top: 5em;
+    padding-left: 2em;
+    padding-right: 2em;
+	min-height: 100vh;
+	max-width: 80rem;
+	/* border: solid 2px black; */
+	font-family: "Roboto", sans-serif;
+    display: grid;
+    grid-template-rows: 0.1fr 1.3fr 0.5fr 0.5fr 0.5fr;
+    place-items: center;
+}
+
+
+.headerContainer {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	padding: 0;
+}
+
+.headerContainer > h1 {
+	font-size: 3em;
+	font-family: "Noto Sans", sans-serif;
+	font-weight: bold;
+	margin: 0;
+}
+
+.imgContainer {
+    display: grid;
+    place-items: center;
+}
+
+.imgContainer > img{
+    width: 80%;
+}
+
+.textContainer > section {
+    margin-left: 11em;
+    margin-right: 11em;
+}
+
+.textContainer > section > p {
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 480px) {
+    .textContainer {
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+	.headerContainer > h1 {
+        font-size: 2em;
+	}
+}
