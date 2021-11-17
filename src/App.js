@@ -8,9 +8,9 @@ import CustomNavbar from "./components/navbar/navbar";
 function App() {
   return (
     <div className="App">
-      <Tutorial></Tutorial>
+      {/* <CustomNavbar /> */}
+      {/* <Tutorial></Tutorial> */}
       <WeatherApp></WeatherApp>
-      <CustomNavbar />
 
     </div>
   );

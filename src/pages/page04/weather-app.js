@@ -1,18 +1,16 @@
 import axios from "axios";
 import { useState } from "react";
 
-// import styles from "./weather-app-styles.module.css";
 import { WiDaySunny } from "react-icons/wi";
 import DayForecastCard from "./page4-components/day-forecast-card";
 import styles from "./weather-app-styles.module.css";
+import CustomNavbar from "../../components/navbar/navbar";
 
 const WeatherApp = () => {
 	return (
 		<div>
+			<CustomNavbar />
 			<div className={styles.mainContainer}>
-				<nav className={styles.navContainer}>
-					<p>nav here</p>
-				</nav>
 				<div className={styles.currentWeather}>
 					<div className={styles.tempIconLocation}>
 						<div className={styles.location}>
