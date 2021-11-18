@@ -7,14 +7,54 @@ import styles from "./weather-app-styles.module.css";
 import CustomNavbar from "../../components/navbar/navbar";
 
 const WeatherApp = () => {
-	// const [ currTemp, setCurrTemp ] = useState(0);
+	const [ currTemp, setCurrTemp ] = useState(0);
+	const [ feelLikeTemp , setFeelLikeTemp ] = useState(0);
+	const [ humidity , setHumidity ] = useState(0);
+	const [ prec , setPrec ] = useState(0);
+	const [ wind , setWind ] = useState(0);
+	const [ highTemp , setHighTemp ] = useState(0);
+	const [ lowTemp , setLowTemp ] = useState(0);
 
-	// useEffect(() => {
-	// 	const updateWeather = async () => {
-	// 		const apiResponse = await axios.get("/weather-info");
-	// 		console.log(apiResponse);
-	// 	}
-	// })
+	const [ lat, setLat ] = useState(0);
+	const [ long, setLong ] = useState(0);
+
+
+
+	useEffect(() => {
+		const updateWeather = async () => {
+			const apiResponse = await axios.get("/weather-info");
+			setCurrTemp(Math.round(apiResponse.data.main.feels_like));
+			setFeelLikeTemp(Math.round(apiResponse.data.main.temp));
+			setHumidity(Math.round(apiResponse.data.main.humidity));
+
+			setWind(apiResponse.data.wind.speed);
+			setHighTemp(Math.round(apiResponse.data.main.temp_max));
+			setLowTemp(Math.round(apiResponse.data.main.temp_min));
+
+		}
+		updateWeather();
+
+		// let options = {
+		// 	enableHighAccuracy: true,
+		// 	timeout: 5000,
+		// 	maximumAge: 0,
+		// };
+
+		// function success(pos) {
+		// 	let crd = pos.coords;
+
+		// 	console.log("Your current position is:");
+		// 	console.log(`Latitude : ${crd.latitude}`);
+		// 	console.log(`Longitude: ${crd.longitude}`);
+		// 	console.log(`More or less ${crd.accuracy} meters.`);
+		// }
+
+		// function error(err) {
+		// 	console.warn(`ERROR(${err.code}): ${err.message}`);
+		// }
+
+		// navigator.geolocation.getCurrentPosition(success, error, options);
+	})
 
 
 	return (
@@ -32,7 +72,7 @@ const WeatherApp = () => {
 						<div className={styles.tempIcon}>
 							<WiDaySunny size={400}></WiDaySunny>
 							<div className={styles.temp}>
-								<h2>21</h2>
+								<h2>{currTemp}</h2>
 							</div>
 						</div>
 					</div>
@@ -41,29 +81,29 @@ const WeatherApp = () => {
 							<div className={styles.extraData}>
 								<p className={styles.feelsLike}>
 									Feels Like:&nbsp;
-									<span className={styles.feelsLikeTemp}>20</span>
+									<span className={styles.feelsLikeTemp}>{feelLikeTemp}</span>
 								</p>
 								<p className={styles.humidity}>
 									Humidity:&nbsp;
-									<span className={styles.humValue}>64%</span>
+									<span className={styles.humValue}>{humidity}%</span>
 								</p>
 								<p className={styles.precipitation}>
-									Precipritation:&nbsp;
+									Precipitation:&nbsp;
 									<span className={styles.precValue}>20%</span>
 								</p>
 							</div>
 							<div className={styles.extraData}>
 								<p className={styles.wind}>
 									Wind:&nbsp;
-									<span className={styles.windValue}>27km/h</span>
+									<span className={styles.windValue}>{wind}km/h</span>
 								</p>
 								<p className={styles.high}>
 									High:&nbsp;
-									<span className={styles.highTempValue}>20</span>
+									<span className={styles.highTempValue}>{highTemp}</span>
 								</p>
 								<p className={styles.low}>
 									Low:&nbsp;
-									<span className={styles.lowTempValue}>20</span>
+									<span className={styles.lowTempValue}>{lowTemp}</span>
 								</p>
 							</div>
 						</div>

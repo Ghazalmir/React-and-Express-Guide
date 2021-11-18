@@ -5,7 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease-out 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -49,7 +49,7 @@ html, body {
 	padding: 2.5em;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 40px;
-    animation: fadeInAnimationCard ease 5s;
+    animation: fadeInAnimationCard ease-out 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transition: all 0.5s ease-out;
@@ -122,7 +122,7 @@ html, body {
 	place-items: center;
     border-radius: 40px;
     background: rgba(255, 255, 255, 0.05);
-    animation: fadeInAnimationCard ease 5s;
+    animation: fadeInAnimationCard ease-out 5s;
 	padding: 2.5em;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
