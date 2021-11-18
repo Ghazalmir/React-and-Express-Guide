@@ -9,16 +9,15 @@ app.get("/", (req, res) => {
 	res.send("Express here!");
 });
 
-
-app.get("/get-weather-toronto", async (req, res) => {
+app.get("/weather-info", async (req, res) => {
     try {
-        const apiRes = await axios.get(apiEndpoint);
-        res.json(apiRes.data.main);
+        const apiResponse = await axios.get(apiEndpoint);
+        res.json(apiResponse.data);
     }
     catch (e) {
         console.log(e);
     }
-});
+})
 
 app.listen(PORT, () => {
 	console.log(`Listening on port ${PORT}...`);

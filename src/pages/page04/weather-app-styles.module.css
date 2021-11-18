@@ -1,95 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 
 .mainContainer {
-    font-size: 20px;
-    min-height: 97.3vh;
-    display: grid;
-    place-items: center;
-    grid-template-rows: 1.2fr 1fr; 
-    background-color: #D9D9D9;
-    color: white;
-    font-family: 'Noto Sans', sans-serif;
+	height: 96.5vh;
+	font-size: 20px;
+	display: grid;
+	place-items: center;
+	grid-template-rows: 1fr 1fr;
+    background-color: #63a4ff;
+    background-image: linear-gradient(150deg, #63a4ff 0%, #83eaf1);
+	color: white;
+	font-family: "Noto Sans", sans-serif;
 }
 
-.navContainer {
-    margin-top: 2em;
-    background-color: #056cf2;
-    border-radius: 15px;
-    width: 75%;
-    text-align: right;
-    padding-right: 2em;
-}
 
 .currentWeather {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1.3fr 1fr;
-    place-items: center;
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1.1fr;
+	place-items: center;
 }
 
-.tempIconLocation {
-    height: 70%;
-    width: 75%;
-    display: grid;
-    grid-template-rows: 0.05fr 1.5fr;
-    padding: 2.5em;
-    background-color: #056cf2;
-    border-radius: 15px;
+.tempIconLocationDate {
+	height: 70%;
+	width: 75%;
+	display: grid;
+	grid-template-rows: 0.05fr 1.5fr;
+	padding: 2.5em;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 40px;
+    animation: fadeInAnimationCard ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: all 0.5s ease-out;
+}
 
+@keyframes fadeInAnimationCard {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.tempIconLocationDate:hover {
+    background: rgba(255, 255, 255, 0.1);
+    
 }
 
 .location {
-    padding-left: 4em;
+	padding-left: 4em;
 }
 .location h3 {
-    font-size: 62px;
-    font-weight: 900;
+	font-size: 3em;
+	font-weight: 900;
+    margin: 0;
+    letter-spacing: 0.15em;
 }
 
-h2,h3 {
+.date {
+	padding-left: 4em;
+}
+.date h3 {
+	font-size: 2em;
+	font-weight: 900;
     margin: 0;
+    letter-spacing: 0.15em;
 }
 
 
 .tempIcon {
-    cursor: default;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+	cursor: default;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 0.8fr;
 }
 
 .temp {
-    font-size: 9em;
-    display: flex;
+	font-size: 9em;
+	display: flex;
 }
+
+.temp > h2 {
+    margin: 0;
+}
+
 
 .temp::after {
-    content: "\00b0 C";
+	content: "\00b0 C";
+	font-family: "Noto Sans", sans-serif;
+	font-weight: bold;
+    font-size: 0.6em;
+}
+
+.extraDataContainer {
+	height: 70%;
+	width: 75%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	place-items: center;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    animation: fadeInAnimationCard ease 5s;
+	padding: 2.5em;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transition: all 0.5s ease-out;
+}
+
+
+.extraDataContainer:hover {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.extraData > p {
+    margin: 0;
+    font-size: 1.7em;
+    font-weight: light;
     font-family: "Noto Sans", sans-serif;
-    font-weight: bold;
+    letter-spacing: 0.1em;
 }
 
-.extraData {
-    height: 70%;
-    width: 75%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    place-items: center;
-    background-color: #056cf2;
-    padding: 2.5em;
-    border-radius: 15px;
-}
-
-
-.weekForecast {
-    width: 100%;
+.quote {
     height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.quote > h3 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: lighter;
+    font-family: "Noto Sans", sans-serif;
+    letter-spacing: 0.02em;
+}
+
+.data {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
+.feelsLike {
+    margin: 0;
+}
+
+
+.feelsLike::after {
+	content: "\00b0 C";
+	font-family: "Noto Sans", sans-serif;
+	font-weight: bold;
+}
+
+.high::after {
+	content: "\00b0 C";
+	font-family: "Noto Sans", sans-serif;
+	font-weight: bold;
+}
+
+.low::after {
+	content: "\00b0 C";
+	font-family: "Noto Sans", sans-serif;
+	font-weight: bold;
+}
+
+.feelsLikeTemp, .humValue, .precValue, .windValue, .highTempValue, .lowTempValue {
+    font-weight: bold;
+}
+
+
+.weekForecast {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 
