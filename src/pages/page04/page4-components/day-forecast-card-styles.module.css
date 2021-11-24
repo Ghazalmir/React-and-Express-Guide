@@ -11,7 +11,7 @@
     place-items: center;
     background: rgba(255, 255, 255, 0.05);
     font-family: "Noto Sans", sans-serif;
-    animation: fadeInAnimationCard1 ease-out 5s;
+    animation: fadeInAnimationCard1 ease-out 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transition: all 0.5s ease-out;
@@ -22,6 +22,22 @@
     letter-spacing: 0.15em;
     font-size: 1.5em;
     font-weight: light;
+}
+
+.info {
+    display: flex;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.info::after {
+	content: "\00b0 C";
+	font-family: "Noto Sans", sans-serif;
+	font-weight: bold;
+    font-size: 1.5em;
 }
 
 @keyframes fadeInAnimationCard1 {
