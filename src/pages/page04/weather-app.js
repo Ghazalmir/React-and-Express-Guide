@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { WiDaySunny } from "react-icons/wi";
 import DayForecastCard from "./page4-components/day-forecast-card";
 import styles from "./weather-app-styles.module.css";
-import CustomNavbar from "../../components/navbar/navbar";
 const { getQuote } = require("generate-quote");
 
 const WeatherApp = () => {
@@ -120,7 +119,6 @@ const WeatherApp = () => {
 
 	return (
 		<div>
-			<CustomNavbar />
 			<div className={styles.mainContainer}>
 				<div className={styles.currentWeather}>
 					<div className={styles.tempIconLocationDate}>

@@ -443,9 +443,11 @@ html, body {
 }
 
 @media only screen and (max-width: 360px) {
+    .tempIconLocationDate {
+        margin-top: 30px;
+    }
     .extraDataContainer {
         font-size: 0.8rem;
-
     }
 }
 
