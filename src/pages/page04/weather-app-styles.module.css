@@ -8,6 +8,8 @@ html, body {
     animation: fadeInAnimation ease-out 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+	height: 100vh;
+    background-color: #63a4ff;
 }
 
 @keyframes fadeInAnimation {
@@ -21,7 +23,7 @@ html, body {
 
 
 .mainContainer {
-	height: 96.5vh;
+	height: 100vh;
 	font-size: 20px;
 	display: grid;
 	place-items: center;
@@ -71,7 +73,7 @@ html, body {
 .locationStyles {
 	padding-left: 4em;
 }
-.locationStyles h3 {
+.locationStyles > h3 {
 	font-size: 3em;
 	font-weight: 900;
     margin: 0;
@@ -217,9 +219,233 @@ html, body {
 	width: 100%;
 	height: 100%;
 	display: flex;
+    flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 }
 
+@media only screen and (max-width: 2160px) {
+    .tempIconLocationDate {
+        font-size: 1rem;
+    }
+    .temp {
+        font-size: 8rem;
+    }
 
+    .extraDataContainer {
+        font-size: 1rem;
+    }
+    .weekForecast {
+        font-size: 1rem;
+    }
+    .tempIcon > img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1730px) {
+    .date {
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 1630px) {
+    .weekForecast {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1rem;
+    }
+    .date {
+        padding-left: 2em;
+    }
+    .locationStyles {
+        padding-left: 2em;
+    }
+    .temp {
+        font-size: 7rem;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .date {
+        font-size: 0.8rem;
+    }
+    .tempIcon > img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .date {
+        font-size: 0.7rem;
+    }
+    .locationStyles {
+        padding-left: 1.7em;
+    }
+    .extraDataContainer {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .date {
+        font-size: 0.55rem;
+    }
+    .tempIconLocationDate {
+        font-size: 0.8rem;
+    }
+    .locationStyles {
+        padding-left: 2em;
+    }
+    .temp {
+        font-size: 5rem;
+    }
+    .tempIcon > img {
+        width: 200px;
+        height: 200px;
+    }
+    .temp::after {
+        font-size: 3rem;
+        margin-left: -0.5rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .date {
+        font-size: 0.55rem;
+        font-size: 0.5rem;
+    }
+    .tempIconLocationDate {
+        font-size: 0.8rem;
+    }
+    .locationStyles {
+        font-size: 0.7rem;
+    }
+    .temp {
+        font-size: 4rem;
+    }
+    .temp::after {
+        font-size: 2rem;
+        margin-left: -0.5rem;
+    }
+    .tempIcon > img {
+        width: 150px;
+        height: 150px;
+    }
+    .extraDataContainer {
+        font-size: 0.6rem;
+    }
+    .quote > h4 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .currentWeather {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tempIconLocationDate {
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .extraDataContainer {
+        font-size: 0.8rem;
+        gap: 30px;
+        margin-bottom: 0.5rem;
+    }
+    .temp {
+        font-size: 6rem;
+    }
+    .temp::after {
+        font-size: 4rem;
+        margin-left: -0.5rem;
+    }
+    .tempIcon > img {
+        width: 300px;
+        height: 300px;
+    }
+    .quote {
+        display: flex;
+    }
+    .quote > h3 {
+        display: none;
+    }
+    .quote > h4 {
+        font-size: 1.2rem;
+    }
+
+}
+@media only screen and (max-width: 630px) {
+    .extraDataContainer {
+        font-size: 0.8rem;
+        gap: 30px;
+    }
+    .temp {
+        font-size: 5rem;
+    }
+    .temp::after {
+        font-size: 3rem;
+        margin-left: -0.5rem;
+    }
+    .tempIcon > img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .data {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 0.8rem;
+    }
+    .extraDataContainer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .extraDataContainer {
+        font-size: 0.6rem;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .tempIcon {
+        display: flex;
+        flex-direction: column;
+    }
+    .locationStyles {
+        font-size: 0.6rem;
+    }
+    .date {
+        font-size: 0.5rem;
+        padding-left: 0.8rem;
+    }
+    .temp {
+        font-size: 6rem;
+        margin-left: 40px;
+    }
+    .tempIcon > img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .extraDataContainer {
+        font-size: 0.8rem;
+
+    }
+}
 

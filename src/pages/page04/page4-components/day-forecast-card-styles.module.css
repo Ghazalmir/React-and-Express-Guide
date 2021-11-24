@@ -7,7 +7,7 @@
     height: 70%;
     min-width: 200px;
     display: grid;
-    grid-template-rows: 0.1fr 1.3fr;
+    grid-template-rows: 0.3fr 1.3fr 0.8fr;
     place-items: center;
     background: rgba(255, 255, 255, 0.05);
     font-family: "Noto Sans", sans-serif;
@@ -28,7 +28,7 @@
     display: flex;
 }
 
-.info h3 {
+.info > h3 {
     margin: 0;
     font-size: 3em;
 }
@@ -51,4 +51,42 @@
 
 .dayForecastCard:hover {
     background: rgba(255, 255, 255, 0.14);
+}
+
+@media only screen and (max-width: 2160px) {
+    .dayForecastCard {
+        min-width: 160px;
+        height: 70%;
+    }
+}
+
+@media only screen and (max-width: 1630px) {
+    .dayForecastCard {
+        grid-template-rows: none;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 10%;
+        min-width: 70%;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .dayForecastCard {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .dayForecastCard {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .icon > img {
+        height: 50px;
+        width: 50px;
+    }
 }
