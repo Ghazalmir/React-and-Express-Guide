@@ -1,4 +1,5 @@
 import QCard from './Qcard';
+import styles from './page5.module.css'
 
 function Page5(){
   const questions = [
