@@ -8,7 +8,8 @@ import Footer from './components/footer/footer';
 function App() {
   return (
     <div className="App">
-      <WeatherApp></WeatherApp>
+      {/* <WeatherApp></WeatherApp> */}
+      <Tutorial></Tutorial>
     </div>
   );
 }
