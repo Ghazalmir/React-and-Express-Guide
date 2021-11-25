@@ -1,36 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Source+Sans+Pro:wght@300&display=swap');
 
 .mainContainer {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	min-height: 100vh;
-    font-size: 16px;
+	font-size: 16px;
 }
 
 .textContainer {
-    font-size: 1em;
+	font-size: 1em;
 	margin: 0 auto;
-    margin-top: 5em;
-    padding-left: 2em;
-    padding-right: 2em;
+	margin-top: 5em;
+	padding-left: 2em;
+	padding-right: 2em;
 	min-height: 100vh;
 	max-width: 80rem;
 	/* border: solid 2px black; */
 	font-family: "Roboto", sans-serif;
-    display: grid;
-    grid-template-rows: 0.1fr 1.3fr 0.5fr 0.5fr 0.5fr;
-    place-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
 }
 
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
 
 .headerContainer {
 	display: flex;
 	justify-content: center;
-    align-items: center;
-	padding: 0;
+	align-items: center;
+	padding-left: 9rem;
+	padding-right: 9rem;
 }
 
 .headerContainer > h1 {
@@ -38,32 +47,71 @@
 	font-family: "Noto Sans", sans-serif;
 	font-weight: bold;
 	margin: 0;
+	letter-spacing: 0.25rem;
+    line-height: 5rem;
+    text-align: center;
 }
+
+.reactWord {
+	font-family: "Segoue UI", sans-serif;
+	letter-spacing: 0;
+	font-weight: bold;
+	font-size: 3.5rem;
+	color: #61dafb;
+    background-color: #282c34;
+    padding: 0.5rem;
+}
+.expressWord {
+    font-family: 'Source Sans Pro', sans-serif;	
+    letter-spacing: 0;
+	font-weight: lighter;
+	font-size: 4rem;
+	color: #353535;
+}
+
 
 .imgContainer {
-    display: grid;
-    place-items: center;
+	display: grid;
+	place-items: center;
 }
 
-.imgContainer > img{
-    width: 80%;
+.imgContainer > img {
+	width: 80%;
 }
 
 .textContainer > section {
-    margin-left: 11em;
-    margin-right: 11em;
+	margin-left: 9rem;
+	margin-right: 9rem;
+	font-size: 1.5rem;
+}
+
+.textContainer > section > h3 {
+	letter-spacing: 0.1rem;
+	margin: 0;
+	font-size: 2.4rem;
+	font-family: "Roboto", sans-serif;
+}
+
+.textContainer > section > * {
+	font-size: 1.4rem;
+	font-family: "Roboto", sans-serif;
+    line-height: 2.7rem;
+}
+
+.textContainer > section li {
+	font-size: 1.4rem;
 }
 
 .textContainer > section > p {
-    font-size: 1.5em;
+	margin-left: 0.15rem;
 }
 
 @media screen and (max-width: 480px) {
-    .textContainer {
-        padding-left: 2em;
-        padding-right: 2em;
-    }
+	.textContainer {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 	.headerContainer > h1 {
-        font-size: 2em;
+		font-size: 2em;
 	}
 }
