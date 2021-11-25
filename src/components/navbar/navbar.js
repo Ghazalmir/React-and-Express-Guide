@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './navbar.css';
 import {Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import styles from 'bootstrap/dist/css/bootstrap.min.css';
+// import styles from 'bootstrap/dist/css/bootstrap.min.css';
 
 //Usage:  <CustomNavbar />
 
