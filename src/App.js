@@ -11,12 +11,12 @@ import Page6 from './pages/page06/page6';
 function App() {
   return (
 		<div>
-			<nav className={styles.nav}>
+			{/* <nav className={styles.nav}>
 				<Link to="/page-1">Page 1</Link>
 				<Link to="/tutorial">Tutorial</Link>
 				<Link to="/demo">Weather App</Link>
-			</nav>
-
+			</nav> */}
+			<CustomNavbar />
 			<Routes>
 				<Route path="/tutorial" element={<Tutorial />} />
 				<Route path="/demo" element={<WeatherApp />} />

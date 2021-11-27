@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
+import CustomNavbar from "../../components/navbar/navbar";
 
 import DayForecastCard from "./page4-components/day-forecast-card";
 import styles from "./weather-app-styles.module.css";
@@ -121,7 +122,7 @@ const WeatherApp = () => {
 		<div>
 			<Helmet>
 				<title>Weather App</title>
-				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; min-height: 100vh; margin: 0; padding: 0"/>
+				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; min-height: 96vh; margin: 0; padding: 0"/>
 			</Helmet>
 			<div className={styles.mainContainer}>
 				<div className={styles.currentWeather}>
