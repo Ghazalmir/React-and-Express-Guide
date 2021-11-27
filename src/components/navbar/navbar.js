@@ -1,33 +1,33 @@
 import React, {useState} from "react";
-import './navbar.css';
-import {Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-// import styles from 'bootstrap/dist/css/bootstrap.min.css';
-
+import styles from './navbar.module.css';
 //Usage:  <CustomNavbar />
 
 
 function CustomNavbar(){
   return(
-  <Navbar collapseOnSelect expand="md" bg="light" variant="light">
-  <Container>
-  <Navbar.Brand href="#home" className="Navbar-Brand">LOGO</Navbar.Brand>
-  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-  <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="me-auto">
+<div className={styles.nav}>
+    <input type="checkbox" id="navCheck" className={styles.navCheck}/>
+    <div className={styles.navHeader}>
+      <div className={styles.logo}>
+        LOGO
+      </div>
+    </div>
+    <div className={styles.navBtn}>
+      <label for="navCheck">
+        <span>&#9776;</span>
+      </label>
+    </div>
+    
+    <div className={styles.navLink}>
+      <a href="#page" >Summary</a>
+      <a href="#page" >Installation</a>
+      <a href="#page" >Tutorial</a>
+      <a href="#page" >Sample Page</a>
+      <a href="#page" >Conclusion</a>
+      <a href="#page" className={styles.lastLink}>Credits</a>
 
-    </Nav>
-    <Nav>
-    <Nav.Link href="#page"  className={"navbtn"} >Summary</Nav.Link>
-    <Nav.Link href="#page" className={"navbtn"} >Installation</Nav.Link>
-    <Nav.Link href="#page" className={"navbtn"} >Tutorial</Nav.Link>
-    <Nav.Link href="#page"  className={"navbtn"} >Sample Page</Nav.Link>
-    <Nav.Link href="#page" className={"navbtn"} >Conclusion</Nav.Link>
-    <Nav.Link href="#page" className={"navbtn"} >Credits</Nav.Link>
-
-    </Nav>
-  </Navbar.Collapse>
-  </Container>
-</Navbar>  
+    </div>
+  </div>
   );
 }
 
