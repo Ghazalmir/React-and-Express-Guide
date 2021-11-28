@@ -44,7 +44,7 @@
 
 .img  h3{
   position: absolute;
-  z-index: 999;
+  z-index: 100;
   top: 3%;
   margin-left: 20px;
   margin-right: 20px;
@@ -54,6 +54,8 @@
   opacity: 0.6;
   margin-top: 0;
   float: right;
+  padding-right: 50px;
+
 
 }
 .contact a{
@@ -73,6 +75,10 @@
   margin-top: 0 !important;
   padding: 0 !important;
 }
+.info p {
+  padding-right: 50px;
+}
+
 
 .secondCard .img{
   order: 2;

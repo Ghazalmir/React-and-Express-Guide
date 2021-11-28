@@ -4,7 +4,7 @@ import styles from './footer.module.css';
 function Footer(){
   return(
     <div className={styles.footer}>
-      <h6>Quick Links</h6>
+      <h4>Quick Links</h4>
       <div className={styles.footerLinks}>
         <a href="#">Summary</a>
         <a href="#">Installation</a>

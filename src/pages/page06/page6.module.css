@@ -15,8 +15,12 @@ h1 {
 	margin: auto;
 	overflow: hidden;
 	width: 70%;
-  padding: 30px;
 }
 .ref h3{
   text-align: center;
+  padding-top: 20px;
+}
+
+.ref p{
+  padding: 0 30px;
 }
