@@ -51,8 +51,8 @@ const Tutorial = () => {
 							install packages required to run your React app.{" "}
 						</p>
 						<p>
-							** "weather-app" can be replaced with a name of your
-							choice **
+							"weather-app" can be replaced with a name of your
+							choice 
 						</p>
 						<p>
 							Once everything has been successfully install, you
@@ -140,8 +140,8 @@ const Tutorial = () => {
 							const Navbar = ())""{" "}
 						</p>
 						<p>
-							** Component names should start with a capital
-							letter **
+							Component names should start with a capital
+							letter 
 						</p>
 						<p>
 							Inside your function add a return statement and
@@ -156,8 +156,8 @@ const Tutorial = () => {
 							working on them sepeerately.
 						</p>
 						<p>
-							** React components must have 1 div container
-							surrounding the entire code **
+							React components must have 1 div container
+							surrounding the entire code 
 						</p>
 						<p>
 							During development, when multiple components are
@@ -427,16 +427,10 @@ const Tutorial = () => {
 						<p>
 							Congratulations! You have designed the basic layout
 							of the Weather App using React. Now of course you
-							can add more styles and/or functionalityif you like
-							but that would make this tutorital painfully long to
+							can add more styles and/or functionality if you like
+							but that would make this tutorial painfully long to
 							read and create.
 						</p>
-					</section>
-					<section>
-						<h3>
-							Bonus: Displaying Weather Information using
-							Express.js and a 3rd Party API
-						</h3>
 					</section>
 				</div>
 			</div>

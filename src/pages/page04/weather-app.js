@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-import CustomNavbar from "../../components/navbar/navbar";
 
 import DayForecastCard from "./page4-components/day-forecast-card";
 import styles from "./weather-app-styles.module.css";
