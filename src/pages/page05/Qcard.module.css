@@ -19,10 +19,17 @@
 }
 
 .question {
-  padding: 30px;
+  padding: 0 30px;
+  padding-bottom: 0;
   display: flex;
+  font-size: larger;
   flex-direction:column;
   justify-content: center;
+
+}
+.question h4{
+  margin-bottom: 0 !important;
+  font-size: larger;
 
 }
 
