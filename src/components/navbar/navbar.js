@@ -27,12 +27,12 @@ function CustomNavbar(){
       <a href="#page" >Conclusion</a>
       <a href="#page" className={styles.lastLink}>Credits</a> */}
 
-      <Link to="/page1">Summary</Link>
-      <Link to="/page2">Installation</Link>
+      <Link to="/summary">Summary</Link>
+      <Link to="/installation">Installation</Link>
       <Link to="/tutorial">Tutorial</Link>
       <Link to="/demo">Sample Page</Link>
-      <Link to="/page5">Conclusion</Link>
-      <Link to="/page6">Credits</Link>
+      <Link to="/conslusion">Conclusion</Link>
+      <Link to="/credits">Credits</Link>
 
     </div>
   </div>
