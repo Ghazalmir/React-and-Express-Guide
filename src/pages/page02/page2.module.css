@@ -33,31 +33,15 @@
   padding-left: 1rem;
 }
 
-.strengthsAndWeakness {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around; */
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-
-
 .all {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.all > * {
-  margin-left: 3rem;
-  margin-right: 3rem;
 }
 
 .all ul {
   line-height: 1.7rem;
   margin-top: 1rem;
 }
-
-
 
 
 .col-9 {width:75%}
