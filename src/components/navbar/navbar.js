@@ -19,20 +19,15 @@ function CustomNavbar(){
       </label>
     </div>
     
-    <div className={styles.navLink}>
-      {/* <a href="#page" >Summary</a>
-      <a href="#page" >Installation</a>
-      <a href="#page" >Tutorial</a>
-      <a href="#page" >Sample Page</a>
-      <a href="#page" >Conclusion</a>
-      <a href="#page" className={styles.lastLink}>Credits</a> */}
+    <div className={styles.navLinks}>
 
-      <Link to="/summary">Summary</Link>
-      <Link to="/installation">Installation</Link>
-      <Link to="/tutorial">Tutorial</Link>
-      <Link to="/demo">Sample Page</Link>
-      <Link to="/conslusion">Conclusion</Link>
-      <Link to="/credits">Credits</Link>
+
+      <Link to="/summary" className={styles.Link}>Summary</Link>
+      <Link to="/installation" className={styles.Link}>Installation</Link>
+      <Link to="/tutorial" className={styles.Link}>Tutorial</Link>
+      <Link to="/demo" className={styles.Link}>Sample Page</Link>
+      <Link to="/conslusion" className={styles.Link}>Conclusion</Link>
+      <Link to="/credits" className={`${styles.Link} ${styles.lastLink}`}>Credits</Link>
 
     </div>
   </div>

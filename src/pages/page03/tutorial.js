@@ -156,7 +156,7 @@ const Tutorial = () => {
 							working on them separately.
 						</p>
 						<p>
-							React components must have 1 <div> container
+							React components must have 1 &lt;div&gt; container
 							surrounding the entire code.
 						</p>
 						<p>

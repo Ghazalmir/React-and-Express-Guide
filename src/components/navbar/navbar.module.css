@@ -28,14 +28,14 @@ body {
   display: none;
 }
 
-.navLink {
+.navLinks {
   display: inline;
   float: right;
   font-size: 17px;
 
 }
 
-.navLink a {
+.Link {
   display: inline-block;
   padding: 14px 8px;
   text-decoration: none;
@@ -46,7 +46,7 @@ body {
   margin-right: 5vw;
 }
 
-.navLink a:hover {
+.Link:hover {
   color: #0642bbb9;
 }
 
@@ -81,7 +81,7 @@ body {
 
     
   }
-  .navLink {
+  .navLinks {
     position: absolute;
     display: block;
     width: 100%;
@@ -94,14 +94,14 @@ body {
     padding-left: 4vw;
     z-index: 500;
   }
-  .navLink a {
+  .Link {
     display: block;
     width: 100%;
   }
-  .navCheck:not(:checked) ~ .navLink {
+  .navCheck:not(:checked) ~ .navLinks {
     height: 0px;
   }
-  .navCheck:checked ~ .navLink {
+  .navCheck:checked ~ .navLinks {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
