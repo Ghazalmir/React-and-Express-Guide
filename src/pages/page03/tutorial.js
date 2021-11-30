@@ -44,7 +44,7 @@ const Tutorial = () => {
 					<section>
 						<h3>Creating our React App</h3>
 						<p>
-							Let's first get started by creating a React
+							Let's get started by creating a React
 							application for our project. In a directory of your
 							choice, type "npx create-react-app weather-app" in
 							your terminal. This will generate files/folder and
@@ -52,10 +52,10 @@ const Tutorial = () => {
 						</p>
 						<p>
 							"weather-app" can be replaced with a name of your
-							choice 
+							choice.
 						</p>
 						<p>
-							Once everything has been successfully install, you
+							Once everything has been successfully installed, you
 							will see a new directory named "weather-app/". Go
 							into this directory by typing "cd weather-app/" in
 							your terminal. Then type "npm start" in your
@@ -78,7 +78,7 @@ const Tutorial = () => {
 
 						<p>
 							Once you open your project folder you will be
-							visited with a bunch of files and folders:
+							visited with several of files and folders:
 						</p>
 						<div className={styles.sectionImgContainer}>
 							<img src={require("./page3-imgs/boilerplate.png").default} alt="" />
@@ -90,7 +90,7 @@ const Tutorial = () => {
 							"src" folder.
 						</p>
 						<p>
-							In fact, you can delete some of these files/folders
+							In fact, you can delete the following files
 							as they are somewhat useless for this project:
 						</p>
 						<ul>
@@ -100,16 +100,16 @@ const Tutorial = () => {
 							<li>setupTests.js</li>
 						</ul>
 						<p>
-							In the "App.js" file remove all code inside the
+							In the "App.js" file, remove all code inside the
 							first "div" tag. Also remove the logo import at the top. You should be left with this:
 						</p>
 						<div className={styles.sectionImgContainer}>
 							<img src={require("./page3-imgs/code_1.png").default} alt="" />
 						</div>
 						<p>
-							Now that we have cleaned up our project a little we
+							Now that we have cleaned up our project a little, we
 							can move onto actually talking about React and its
-							usefullness to our Weather Application!
+							usefulness to our Weather Application!
 						</p>
 					</section>
 
@@ -122,7 +122,7 @@ const Tutorial = () => {
 							components.
 						</p>
 						<p>
-							A component is essentially just a bundle of code
+							A component is essentially a bundle of code
 							generating some visual with or without
 							functionality. Examples of components could be a
 							navbar, sections, or as you will see, a single day
@@ -133,35 +133,35 @@ const Tutorial = () => {
 							to be the case.
 						</p>
 						<p>
-							To make a new component, just make a new .js file
-							with some name of your liking (Ex: navbar.js). Then,
-							inside that file simply make a JavaScript function
+							To make a new component, simply create a new .js file
+							with a name of your liking (Ex: navbar.js). Then,
+							inside that file, make a JavaScript function
 							with a name that will define your component "(Ex:
 							const Navbar = ())""{" "}
 						</p>
 						<p>
 							Component names should start with a capital
-							letter 
+							letter.
 						</p>
 						<p>
-							Inside your function add a return statement and
-							inside that return statement you can start typing
-							some HTML
+							Inside your function, add a return statement.
+							Within that return statement, you can start typing
+							some HTML.
 						</p>
 						<p>
 							The cool thing about React components is that you
 							can write HTML in the return statement while also
 							writing logic above the return statement. This is
 							much better than creating HTML and JS files and
-							working on them sepeerately.
+							working on them separately.
 						</p>
 						<p>
-							React components must have 1 div container
-							surrounding the entire code 
+							React components must have 1 <div> container
+							surrounding the entire code.
 						</p>
 						<p>
 							During development, when multiple components are
-							used it is best to keep them in a folder. With that
+							used, it is best to keep them in one folder. With that
 							in mind, you should create a "components" folder
 							inside your src folder to hold all your component
 							files.
@@ -171,14 +171,14 @@ const Tutorial = () => {
 
 						<p>
 							There's a lot more about React that we can talk
-							about but for this project I don't believe they are necessary concepts.
+							about, but for this project I don't believe they are necessary concepts.
 						</p>
 					</section>
 					<section>
 						<h3>How we will design our Weather App</h3>
 						<p>
 							Now that we know a little bit about React and
-							components we can start creating the skeleton of our
+							components, we can start creating the skeleton of our
 							page and styling as we go.
 						</p>
 						<p>
@@ -206,9 +206,9 @@ const Tutorial = () => {
 							stylesheet.
 						</p>
 						<p>
-							You may ask: Well isn't that just how CSS works?
-							Well yes, but also no. In React when you import
-							mulitple stylesheets it treats them as one big
+							You may ask: "isn't that just how CSS works?"
+							Well yes, but also no. In React, when you import
+							mulitple stylesheets, it treats them as one big
 							global stylesheet. This can cause problems as styles
 							from different components can interfere with each
 							other.
@@ -228,10 +228,10 @@ const Tutorial = () => {
 					<section>
 						<h3>Designing our Weather App</h3>
 						<p>
-							When it comes to the layout of the page you can do
+							When it comes to the layout of the page, you can do
 							whatever your creative mind wants to do. In this
-							case, I will be using CSS grid as it allows you to
-							split your page into rows and columns making it
+							case, I will be using a CSS grid as it allows you to
+							split your page into rows and columns, making it
 							easier to place your components/HTML elements on the
 							page.
 						</p>
@@ -243,8 +243,8 @@ const Tutorial = () => {
 						</p>
 
 						<p>
-							Start by selecting the html and body in your
-							stylesheet and giving them these styles
+							Start by selecting the HTML and body in your
+							stylesheet and giving them these styles.
 						</p>
 						<div className={styles.sectionImgContainer}>
 							<img src={require("./page3-imgs/code_4.png").default} alt="" />
@@ -286,13 +286,13 @@ const Tutorial = () => {
 							<img src={require("./page3-imgs/code_7.png").default} alt="" />
 						</div>
 						<p>
-							Inside the "current" div create 2 new divs with
+							Inside the "current" div, create 2 new divs with
 							classNames "currentData" and "extraData" where the
 							first will have the current temperature and the
 							other will have extra data such as humidity, wind
 							speed, probabilty of precipitation, etc. Style the
 							"current" div such that it has a grid with 2
-							columns, takes up more space in the container it
+							columns, taking up more space in the container it
 							resides in:
 						</p>
 						<div className={styles.sectionImgContainer}>
@@ -303,7 +303,7 @@ const Tutorial = () => {
 							side by side.
 						</p>
 						<p>
-							Inside your "currentData" add 3 divs with classNames
+							Inside your "currentData", add 3 divs with classNames
 							"location", "date", and "temp" whose purpose is
 							self-explanatory. Style "currentData" so that it has
 							a grid with 2 rows where the first row is for the
@@ -320,7 +320,7 @@ const Tutorial = () => {
 							<img src={require("./page3-imgs/code_9.png").default} alt="" />
 						</div>	
 						<p>
-							Inside the "location", "date", and "temp" divs add
+							Inside the "location", "date", and "temp" divs, add
 							either a h2 or h3 and add some filler text such as
 							"Toronto, Ontario" for location, "September 2021"
 							for date, or "2 celsius" for temp. Style the
@@ -341,10 +341,10 @@ const Tutorial = () => {
 							up some space in its parent container.
 						</p>
 						<p>
-							Inside the "extraData" container create 4 divs with
+							Inside the "extraData" container, create 4 divs with
 							classNames "feelsLike", "humidity", "windSpeed",
-							"precipitation". To each of these divs add your own
-							filler text/values. For styling, make sure the font
+							"precipitation". Add your own filler text/values
+							for each of these. For styling, make sure the font
 							size is legible and that you are using relative
 							units (rem, em, etc.) so that your the size of your
 							text depends on something (font-size of body,
@@ -356,7 +356,7 @@ const Tutorial = () => {
 						<p>
 							Now let's move onto the "forecast" div. In this we
 							will need to display 7 days worth of imformation.
-							Instead of writing out a div for each day we will
+							Instead of writing out a div for each day, we will
 							create and use a reusable DayCard component with
 							properties day and the temperature.
 						</p>
@@ -368,11 +368,11 @@ const Tutorial = () => {
 							the WeatherApp component (or look at the
 							instructions in section "How we will design our
 							Weather App"). The only difference this time is the
-							use of props "day" and "temperatre" within the
+							use of props "day" and "temperature" within the
 							DayCard component
 						</p>
 						<p>
-							Before we start working on this component we must
+							Before we start working on this component, we must
 							create a new stylesheet named
 							"day-card-style.module.css". Create and import this
 							file into dayCard.js.
@@ -390,13 +390,13 @@ const Tutorial = () => {
 							height and width) as they will be side by side in
 							the app. To display the day and temperature with a
 							gap in between you can either use margins, flexbox,
-							or grid. I would recommend flexbox or grid as it
-							allows the styling to become responsive. The gap
+							or grid. I would recommend flexbox or grid as they
+							allow the styling to become responsive. The gap
 							between elements will dynamically change when the
 							page size is shrinking or stretching.
 						</p>
 						<p>
-							Now inside the main div of the DayCard component create 2 divs with
+							Now inside the main div of the DayCard component, create 2 divs with
 							classNames "day" and "temperature". Inside those
 							divs you can add a h2, h3, or h4. You do not need to
 							add filler text as the text that will be rendered
@@ -407,16 +407,16 @@ const Tutorial = () => {
 							<img src={require("./page3-imgs/code_13.png").default} alt="" />
 						</div>	
 						<p>
-							Once you are done with the DayCard component head
-							back over to your weather-app.js file and inside the
-							"forecast" div add 7 DayCards. Add a CSS flexbox to
+							Once you are done with the DayCard component, head
+							back over to your weather-app.js file. Inside the
+							"forecast" div, add 7 DayCards. Add a CSS flexbox to
 							the "forecast" div as it makes whatever is inside of
 							the div responsive to the screen's size. This is
 							important as different screen sizes will display
 							your Weather App differently.
 						</p>
 						<p>
-							For each DayCard pass a different day of the week
+							For each DayCard, pass a different day of the week
 							and a temperature. You will now see 7 DayCard
 							components being displayed. All with different days
 							of the week and some temperature.
@@ -427,7 +427,7 @@ const Tutorial = () => {
 						<p>
 							Congratulations! You have designed the basic layout
 							of the Weather App using React. Now of course you
-							can add more styles and/or functionality if you like
+							can add more styles and/or functionality if you like,
 							but that would make this tutorial painfully long to
 							read and create.
 						</p>
