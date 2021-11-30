@@ -77,7 +77,7 @@ function Page1(){
         </p>
         </div>
         <div className={styles.col-4}>
-          <h3>Weaknesses<h3>
+          <h3>Weaknesses</h3>
         </div>
         <div className={styles.col-4-box}>
           <p>• Event-driven call-back nature, which can be difficult to understand<br>
