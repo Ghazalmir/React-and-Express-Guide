@@ -3,6 +3,7 @@
   animation: fadeInAnimationCard ease-out 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  height: 90.9vh;
 }
 
 @keyframes fadeInAnimationCard {
