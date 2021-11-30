@@ -121,7 +121,7 @@ const WeatherApp = () => {
 		<div>
 			<Helmet>
 				<title>Weather App</title>
-				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; min-height: 100vh; margin: 0; padding: 0"/>
+				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; min-height: 96vh; margin: 0; padding: 0"/>
 			</Helmet>
 			<div className={styles.mainContainer}>
 				<div className={styles.currentWeather}>

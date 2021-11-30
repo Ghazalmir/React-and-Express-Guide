@@ -11,14 +11,26 @@
 	box-sizing: border-box;
 	min-height: 100vh;
 	font-size: 16px;
+    animation: fadeInAnimationCard ease-out 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimationCard {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .textContainer {
-	font-size: 1em;
+	font-size: 1rem;
 	margin: 0 auto;
-	margin-top: 5em;
-	padding-left: 2em;
-	padding-right: 2em;
+	margin-top: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 	min-height: 100vh;
 	max-width: 80rem;
 	/* border: solid 2px black; */
@@ -61,11 +73,12 @@
     background-color: #282c34;
     padding: 0.5rem;
 }
+
 .expressWord {
     font-family: 'Source Sans Pro', sans-serif;	
     letter-spacing: 0;
 	font-weight: lighter;
-	font-size: 4rem;
+	font-size: 4.4rem;
 	color: #353535;
 }
 
@@ -75,9 +88,20 @@
 	place-items: center;
 }
 
+.sectionImgContainer {
+	display: grid;
+	place-items: center;
+}
+
+.sectionImgContainer > img{
+	width: 100%;
+}
+
 .imgContainer > img {
 	width: 80%;
+	border-radius: 10px;
 }
+
 
 .textContainer > section {
 	margin-left: 9rem;

@@ -8,7 +8,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 	font-size: 20px;
-    height: 100vh;
+    height: 96vh;
 	display: grid;
 	place-items: center;
 	grid-template-rows: 1fr 1fr;
@@ -135,7 +135,7 @@
 }
 
 ::selection {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(150, 150, 150, 0.22);
 }
 
 .extraData > p {
@@ -344,6 +344,7 @@
     }
     .tempIconLocationDate {
         margin-bottom: 1.5rem;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
     }
@@ -374,7 +375,7 @@
     }
 
 }
-@media only screen and (max-width: 630px) {
+@media only screen and (max-width: 730px) {
     .extraDataContainer {
         font-size: 0.8rem;
         gap: 30px;
@@ -412,7 +413,7 @@
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
     .tempIcon {
         display: flex;
         flex-direction: column;

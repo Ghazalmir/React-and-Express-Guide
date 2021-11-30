@@ -1,24 +1,65 @@
-*{box-sizing:border-box}
-.col-1 {width:8.33%}
-.col-2 {width:16.66%}
-.col-3 {width:25%}
-.col-4 {width:33.33%}
-.col-4-box {
+.main {
+  font-family: "Roboto", sans-serif;
+  animation: fadeInAnimationCard ease-out 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimationCard {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.col1 {width:8.33%}
+.col2 {width:16.66%}
+.col3 {width:25%}
+.col4 {width:33.33%}
+.col5 {width:41.66%}
+.col6 {width:50%}
+.col7 {width:58.33%}
+.col8 {
   margin-bottom: 50px !important;
   color: #0d0d0d;
-  background-color: #f3f2f2;
-  border-radius: 10px;
-  border: 2px solid #0d0d0d;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  max-width: 100%;
-  margin: auto;
-  overflow: hidden;
-  width: 33.33%;
+  background-color: #fff;
+	border-radius: 10px;
+  border: 2px solid #f3f2f2;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+  font-size: 20px;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
-.col-5 {width:41.66%}
-.col-6 {width:50%}
-.col-7 {width:58.33%}
-.col-8 {width:66.66%}
+
+.strengthsAndWeakness {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+
+.all {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.all > * {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.all ul {
+  line-height: 1.7rem;
+  margin-top: 1rem;
+}
+
+
+
+
 .col-9 {width:75%}
 .col-10 {width:83.33%}
 .col-11 {width:91.66%}
@@ -26,25 +67,96 @@
 [class*="col-"] {float:left; padding:15px}
 .row::after {content:""; clear:both; display:table}
 
-h1 {
+
+
+
+.h1Style {
   text-align: center;
-  margin: 40px 0;
+  margin-top: 1rem;
   color: #0d0d0d;
+  font-size: 3rem;
+  font-family: "Noto Sans", sans-serif;
+	letter-spacing: 0.25rem;
+  line-height: 5rem;
 }
 
-h3 {
+.h1Style > h1{
+  margin: 0;
+}
+
+.reactWord {
+	font-family: "Segoue UI", sans-serif;
+	letter-spacing: 0;
+	font-weight: bold;
+	font-size: 2.4rem;
+	color: #61dafb;
+  background-color: #282c34;
+  padding: 0.5rem;
+  width: 105px;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.reactWordHeader {
+	font-family: "Segoue UI", sans-serif;
+	letter-spacing: 0;
+	font-weight: bold;
+	font-size: 3.5rem;
+	color: #61dafb;
+  background-color: #282c34;
+  padding: 0.5rem;
+  width: 141px;
+  margin: 0;
+}
+
+.expressWordHeader {
+  font-family: 'Source Sans Pro', sans-serif;	
+  letter-spacing: 0;
+	font-weight: lighter;
+	font-size: 4.4rem;
+	color: #353535;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.expressWord {
+  font-family: 'Source Sans Pro', sans-serif;	
+  letter-spacing: 0;
+	font-weight: 500;
+	font-size: 3rem;
+	color: #353535;
+  margin: 0;
+  margin-left: 0.8rem;
+  margin-top: 2rem;
+  border-bottom: 0.5px solid black;
+  width: 150px;
+}
+
+.h2Style {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
   text-align: center;
-  padding-top: 20px;
+  font-family: "Noto sans", sans-serif;
+  font-size: 42px;
+	letter-spacing: 0.25rem;
 }
 
-p {
-  padding: 0 30px;
+.h3Style {
+  margin-left: 1.1rem;
+}
+
+.pStyle {
+  margin-left: 1.1rem;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+}
+
+.pStyle > p {
+  margin: 0;
 }
 
 @media only screen and (max-width:500px) {
-  
   img {max-width: 400px; height: auto};
-  grid-template-colums:1fr;
-}
+} 
 @media only screen and (max-width:900px) {}
 @media only screen and (max-width:1920px) {}
