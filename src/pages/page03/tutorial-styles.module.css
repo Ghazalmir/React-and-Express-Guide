@@ -139,3 +139,111 @@
 		font-size: 2em;
 	}
 }
+
+@media screen and (max-width: 1050px) {
+	.textContainer > section {
+		margin-left: 5rem;
+		margin-right: 5rem;
+	}
+	.headerContainer > h1 {
+		font-size: 2.5rem;
+	}
+	.textContainer > section > h3 {
+		letter-spacing: 0.1rem;
+		margin: 0;
+		font-size: 2.4rem;
+	}
+
+	.textContainer > section > * {
+		font-size: 1.4rem;
+		font-family: "Roboto", sans-serif;
+		line-height: 2.7rem;
+	}
+
+	.textContainer > section li {
+		font-size: 1.4rem;
+	}
+
+	.textContainer > section > p {
+		margin-left: 0.15rem;
+	}
+}
+
+@media screen and (max-width: 730px) {
+	.textContainer > section {
+		margin-left: 3rem;
+		margin-right: 3rem;
+	}
+	.headerContainer {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+	.headerContainer > h1 {
+		font-size: 2.1rem;
+	}
+
+	.reactWord {
+		font-size: 3rem;
+	}
+
+	.expressWord {
+		font-size: 4rem;
+	}
+	.textContainer > section > h3 {
+		font-size: 2rem;
+	}
+
+	.textContainer > section > * {
+		font-size: 1.2rem;
+		font-family: "Roboto", sans-serif;
+		line-height: 2.7rem;
+	}
+
+	.textContainer > section li {
+		font-size: 1.2rem;
+	}
+
+	.textContainer > section > p {
+		margin-left: 0.15rem;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.headerContainer {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		margin: 0;
+	}
+	.headerContainer > h1 {
+		font-size: 1.5rem;
+	}
+
+	.reactWord {
+		font-size: 2rem;
+	}
+
+	.expressWord {
+		font-size: 3rem;
+	}
+	.textContainer > section {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.textContainer > section > h3 {
+		font-size: 1.3rem;
+	}
+
+	.textContainer > section > * {
+		font-size: 1rem;
+		font-family: "Roboto", sans-serif;
+		line-height: 2.7rem;
+	}
+
+	.textContainer > section li {
+		font-size: 1rem;
+	}
+
+}
+
+	
