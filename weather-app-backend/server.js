@@ -1,12 +1,15 @@
 const express = require("express");
 const axios = require("axios");
-const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
 app.use(express.json());
+app.use((req,res,next) => {
+	res.header("Access-Control-Allow-Origin", '*');
+	next();
+});
+
 
 app.get("/", (req, res) => {
 	res.send("Express here!");
@@ -20,7 +23,7 @@ app.post("/weather-info", async (req, res) => {
 		const apiResponse = await axios.get(apiEndpoint);
 		res.json(apiResponse.data);
 	} catch (e) {
-		console.log(e);
+		console.log(e, "weather error");
 	}
     res.end();
 });
@@ -35,7 +38,7 @@ app.post("/forecast-info", async (req, res) => {
         res.json(apiResponse.data);
     }
     catch (e) {
-        console.log(e)
+        console.log(e, "forecaset error");
     }
 })
 
