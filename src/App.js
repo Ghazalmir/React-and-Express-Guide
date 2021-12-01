@@ -15,7 +15,7 @@ function App() {
 		<div>
 			<CustomNavbar />
 			<Routes>
-				<Route path="/summary" element={<Page1 />} />
+				<Route path="/" element={<Page1 />} />
 				<Route path="/installation" element={<Page2 />} />
 				<Route path="/tutorial" element={<Tutorial />} />
 				<Route path="/demo" element={<WeatherApp />} />
