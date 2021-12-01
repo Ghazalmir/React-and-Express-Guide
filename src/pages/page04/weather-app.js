@@ -46,7 +46,7 @@ const WeatherApp = () => {
 
 	const updateInfo = async () => {
 		setQuote(`"${getQuote().text}" - ${getQuote().author}`);
-		const weatherApiResponse = await axios.post("/weather-info", {
+		const weatherApiResponse = await axios.post("/api/weather-info", {
 			longitude: long,
 			latitude: lat,
 		});
@@ -57,7 +57,7 @@ const WeatherApp = () => {
 		setHighTemp(Math.round(weatherApiResponse.data.main.temp_max));
 		setLowTemp(Math.round(weatherApiResponse.data.main.temp_min));
 
-		const forecastApiResponse = await axios.post("/forecast-info", {
+		const forecastApiResponse = await axios.post("/api/forecast-info", {
 			longitude: long,
 			latitude: lat,
 		});
@@ -121,7 +121,7 @@ const WeatherApp = () => {
 		<div>
 			<Helmet>
 				<title>Weather App</title>
-				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; min-height: 96vh; margin: 0; padding: 0"/>
+				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; min-height: 100vh; margin: 0; padding: 0"/>
 			</Helmet>
 			<div className={styles.mainContainer}>
 				<div className={styles.currentWeather}>
