@@ -12,8 +12,6 @@ app.get("/", (req, res) => {
 	res.send("Express here!");
 });
 
-app.get("/favicon.ico", (req, res) => res.status(204));
-
 app.post("/weather-info", async (req, res) => {
 	let latitude = req.body.latitude;
 	let longitude = req.body.longitude;
@@ -26,31 +24,6 @@ app.post("/weather-info", async (req, res) => {
 	}
     res.end();
 });
-
-app.get("/random-quote", async (req,res) => {
-	const apiEndpoint = `https://api.forismatic.com/api/jsonp/`;
-	try {
-		const apiResponse = await axios.get(apiEndpoint);
-		res.json(apiResponse.data);
-	} catch (e) {
-		console.log(e);
-	}
-    res.end();
-})
-
-app.post("/location-info", async (req, res) => {
-	let latitude = req.body.latitude;
-	let longitude = req.body.longitude;
-    const apiEndpoint = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyBLLWCEmVuHflDeaKhSqyiyfSRdyxc94ug`;
-    try {
-        const apiResponse = await axios.get(apiEndpoint);
-        res.json(apiResponse.data.results);
-    }
-    catch (e) {
-        console.log(e);
-    }
-    res.end();
-})
 
 app.post("/forecast-info", async (req, res) => {
 	let latitude = req.body.latitude;
@@ -65,7 +38,6 @@ app.post("/forecast-info", async (req, res) => {
         console.log(e)
     }
 })
-
 
 
 app.listen(PORT, () => {
