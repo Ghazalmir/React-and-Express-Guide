@@ -21,7 +21,7 @@
 .col6 {width:50%}
 .col7 {width:58.33%}
 .col8 {
-  margin-bottom: 50px !important;
+  margin-bottom: 100px !important;
   color: #0d0d0d;
   background-color: #fff;
 	border-radius: 10px;
@@ -34,9 +34,6 @@
 }
 
 .strengthsAndWeakness {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around; */
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
@@ -154,12 +151,6 @@
 .pStyle > p {
   margin: 0;
 }
-
-/* @media only screen and (max-width:500px) {
-  img {max-width: 400px; height: auto};
-} 
-@media only screen and (max-width:900px) {}
-@media only screen and (max-width:1920px) {} */
 
 @media only screen and (max-width:1280px) {
   .col8 {
