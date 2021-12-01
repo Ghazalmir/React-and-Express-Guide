@@ -29,8 +29,8 @@
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
   font-size: 20px;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .strengthsAndWeakness {
@@ -155,8 +155,89 @@
   margin: 0;
 }
 
-@media only screen and (max-width:500px) {
+/* @media only screen and (max-width:500px) {
   img {max-width: 400px; height: auto};
 } 
 @media only screen and (max-width:900px) {}
-@media only screen and (max-width:1920px) {}
+@media only screen and (max-width:1920px) {} */
+
+@media only screen and (max-width:1280px) {
+  .col8 {
+    font-size: 18px;
+  }
+  .h2Style {
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+  }
+  .reactWord {
+    font-size: 1.9rem;
+    width: 85px;
+  }
+  .expressWord {
+    font-size: 2.5rem;
+    width: 125px;
+  }
+  .all > * {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+} 
+
+@media only screen and (max-width:1050px) {
+  .all {
+    display: flex;
+    flex-direction: column;
+  }
+} 
+
+@media only screen and (max-width:800px) {
+  .h1Style {
+    font-size: 2.5rem;
+  }
+  .reactWordHeader {
+    font-size: 3rem;
+  }
+  .expressWordHeader {
+    font-size: 4rem;
+  }
+  .col8 {
+    padding-left: 1rem;
+    font-size: 16px;
+  }
+} 
+@media only screen and (max-width:720px) {
+  .h1Style {
+    font-size: 2.5rem;
+  }
+  .reactWordHeader {
+    font-size: 2.5rem;
+  }
+  .expressWordHeader {
+    font-size: 3.5rem;
+  }
+  .h2Style {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .h1Style {
+    font-size: 2rem;
+  }
+  .reactWordHeader {
+    font-size: 2rem;
+  }
+  .expressWordHeader {
+    font-size: 3rem;
+  }
+  .h2Style {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .all > * {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+} 
