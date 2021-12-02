@@ -21,6 +21,15 @@ h1 {
   padding-top: 20px;
 }
 
-.ref p{
+.ref ul{
   padding: 0 30px;
+  text-indent: -1.5rem; 
+  margin-left: 20px; 
+  margin-right: 20px;
+  list-style: none; 
+}
+
+.ref li{
+  line-height: 2.5rem;
+
 }

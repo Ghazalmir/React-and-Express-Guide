@@ -1,51 +1,26 @@
 import styles from './page6.module.css';
 import CreditsCard from './card';
+import { Members, Refs } from './page6data'
 
 
 function Page6(){
-  const members = [
-    {
-      name: 'Adam Ferrara',
-      img: 'https://joeschmoe.io/api/v1/random',
-      order: 1 ,
-      res: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quod a voluptate debitis quas fugiat iure eos officiis aspernatur? Doloribus consequuntur excepturi dolorum necessitatibus, maiores corporis iste ducimus perspiciatis quo. Dolor officiis quasi doloribus autem, modi quod odio doloremque eos pariatur fugit, exercitationem similique, soluta necessitatibus. Harum dolorem fugiat illo aliquam recusandae? Eius voluptatum repudiandae atque minus consequuntur ipsum deleniti.',
-      github: '',
-      linkedin: ''
-    }, 
-    {
-      name: 'Syed Wahaj Haider',
-      img: 'https://joeschmoe.io/api/v1/random',
-      order: 2 ,
-      res: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quod a voluptate debitis quas fugiat iure eos officiis aspernatur? Doloribus consequuntur excepturi dolorum necessitatibus, maiores corporis iste ducimus perspiciatis quo. Dolor officiis quasi doloribus autem, modi quod odio doloremque eos pariatur fugit, exercitationem similique, soluta necessitatibus. Harum dolorem fugiat illo aliquam recusandae? Eius voluptatum repudiandae atque minus consequuntur ipsum deleniti.',
-      github: '',
-      linkedin: ''
-    }, 
-    {
-    name: 'Ghazal Mirsayyah',
-    img: 'https://joeschmoe.io/api/v1/random',
-    order: 3 ,
-    res: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quod a voluptate debitis quas fugiat iure eos officiis aspernatur? Doloribus consequuntur excepturi dolorum necessitatibus, maiores corporis iste ducimus perspiciatis quo. Dolor officiis quasi doloribus autem, modi quod odio doloremque eos pariatur fugit, exercitationem similique, soluta necessitatibus. Harum dolorem fugiat illo aliquam recusandae? Eius voluptatum repudiandae atque minus consequuntur ipsum deleniti.',
-    github: '',
-    linkedin: ''}
-  ];
-
+  
   return(
     <div>  
       <h1>Meet the Team!</h1>
-      {members.map (member => (<CreditsCard 
+      {Members.map (member => (<CreditsCard 
       name={member.name} 
       img={member.img}
       order={member.order}
-      res={member.res}
+      res={(member.res).map (x => <li>{"- " + x}</li>)}
       github={member.github}
-      linkedin={member.linkedin}
         />) )}
       
       <div className={styles.ref}>
       <h3>References</h3>
-      <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam quod a voluptate debitis quas fugiat iure eos officiis aspernatur? Doloribus consequuntur excepturi dolorum necessitatibus, maiores corporis iste ducimus perspiciatis quo. Dolor officiis quasi doloribus autem, modi quod odio doloremque eos pariatur fugit, exercitationem similique, soluta necessitatibus. Harum dolorem fugiat illo aliquam recusandae? Eius voluptatum repudiandae atque minus consequuntur ipsum deleniti.
-      </p>
+      <ul>
+        {Refs.map (ref => <li> {ref} </li>) }
+      </ul>
       </div>
 
     </div>
