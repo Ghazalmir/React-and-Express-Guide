@@ -11,9 +11,9 @@ function CreditsCard(props){
       </div>
       <div className={styles.info}>
         <h2>Responsibilities</h2>
-        <p>{props.res}</p>
+        <ul className={styles.res}>{props.res}</ul>
         <span className={styles.contact}>
-          <a href={props.github}>GitHub</a> | <a href={props.linkedin}>LinkedIn</a>
+          <a href={props.github}>GitHub</a>
         </span>
       </div>
     </div>
