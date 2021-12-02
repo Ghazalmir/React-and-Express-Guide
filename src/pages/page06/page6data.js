@@ -7,21 +7,21 @@ const Members = [
     name: 'Adam Ferrara',
     img: Adam,
     order: 1 ,
-    res: ['page 1', 'page 2', 'Researching the popularity of the chosen frameworks for the first page','Citing the external resources they have used on their part' ,'Writing their opinion for conclusion' ,'Testing and Proofreading the code and the content (shared responsibility)','Checking responsiveness of all pages (shared responsibility)'],
+    res: ['Page 1', 'Page 2', 'Researching the popularity of the chosen frameworks for the first page','Citing the external resources they have used on their part' ,'Writing their opinion for conclusion' ,'Testing and proofreading the code and the content (shared responsibility)','Checking responsiveness of all pages (shared responsibility)'],
     github: 'https://github.com/XamadFP'
   }, 
   {
     name: 'Syed Wahaj Haider',
     img: Wahaj,
     order: 2 ,
-    res: ['Page 3', 'Page 4', 'Researching the strengths of the chosen frameworks for the first page', 'Citing the external resources they have used on their part', 'Writing their opinion for conclusion', 'Testing and Proofreading the code and the content (shared responsibility)', 'Checking responsiveness of all pages (shared responsibility)', 'Deploying the website'] ,
+    res: ['Page 3', 'Page 4', 'Researching the strengths of the chosen frameworks for the first page', 'Citing the external resources they have used on their part', 'Writing their opinion for conclusion', 'Testing and proofreading the code and the content (shared responsibility)', 'Checking responsiveness of all pages (shared responsibility)', 'Deploying the website'] ,
     github: 'https://github.com/Wazotik'
   }, 
   {
   name: 'Ghazal Mirsayyah',
   img: Ghazal,
   order: 3 ,
-  res: ['Page5', 'Page 6' , 'Navbar and footer', 'Researching the weaknesses of the chosen frameworks for the first page','Writing their opinion for conclusion','Testing and Proofreading the code and the content (shared responsibility)','Checking responsiveness of all pages (shared responsibility)','Organizing and planning out the project, and ensuring the team stays on schedule and adheres to the deadlines'] , 
+  res: ['Page 5', 'Page 6' , 'Navbar and footer', 'Researching the weaknesses of the chosen frameworks for the first page','Writing their opinion for conclusion','Testing and proofreading the code and the content (shared responsibility)','Checking responsiveness of all pages (shared responsibility)','Organizing and planning out the project, and ensuring the team stays on schedule and adheres to the deadlines'] , 
   github: 'https://github.com/ghazalmir'}
 
 ];
