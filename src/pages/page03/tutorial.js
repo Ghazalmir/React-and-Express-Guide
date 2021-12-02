@@ -32,12 +32,11 @@ const Tutorial = () => {
 							<li>Create our React App</li>
 							<li>Get rid of unecessary files/folders</li>
 							<li>
-								Create components and stylesheets for those
-								components using CSS Modules
+								Create necessary React components
 							</li>
+							<li>Style components using CSS Module stylesheets</li>
 							<li>
-								Design the app using previous knowledge of HTML
-								and CSS
+								Lay out the components within the app
 							</li>
 						</ul>
 					</section>
