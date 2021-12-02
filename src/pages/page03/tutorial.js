@@ -30,7 +30,7 @@ const Tutorial = () => {
 						<h3>What we need to do</h3>
 						<ul>
 							<li>Create our React App</li>
-							<li>Get rid of unecessary files/folders</li>
+							<li>Get rid of unnecessary files/folders</li>
 							<li>
 								Create necessary React components
 							</li>
@@ -77,7 +77,7 @@ const Tutorial = () => {
 
 						<p>
 							Once you open your project folder you will be
-							visited with several of files and folders:
+							visited with several files and folders:
 						</p>
 						<div className={styles.sectionImgContainer}>
 							<img src={require("./page3-imgs/boilerplate.png").default} alt="" />
@@ -117,8 +117,7 @@ const Tutorial = () => {
 						<p>
 							React makes designing user interfaces (UI) simple by
 							allowing the developer to divide the interface into
-							smaller "pieces". These "pieces" are called
-							components.
+							smaller pieces called "components".
 						</p>
 						<p>
 							A component is essentially a bundle of code
@@ -133,9 +132,9 @@ const Tutorial = () => {
 						</p>
 						<p>
 							To make a new component, simply create a new .js file
-							with a name of your liking (Ex: navbar.js). Then,
+							with a name of your liking (eg.: navbar.js). Then,
 							inside that file, make a JavaScript function
-							with a name that will define your component "(Ex:
+							with a name that will define your component "(eg.:
 							const Navbar = ())""{" "}
 						</p>
 						<p>
@@ -165,9 +164,6 @@ const Tutorial = () => {
 							inside your src folder to hold all your component
 							files.
 						</p>
-
-						<p>talk about JSX</p>
-
 						<p>
 							There's a lot more about React that we can talk
 							about, but for this project I don't believe they are necessary concepts.
