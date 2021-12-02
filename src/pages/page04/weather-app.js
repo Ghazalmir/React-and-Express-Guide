@@ -11,7 +11,7 @@ const WeatherApp = () => {
 	const [currDate, setCurrDate] = useState("");
 	const [feelLikeTemp, setFeelLikeTemp] = useState(0);
 	const [humidity, setHumidity] = useState(0);
-	const [prec, setPrec] = useState(0); //need
+	const [prec, setPrec] = useState(0); 
 	const [wind, setWind] = useState(0);
 	const [highTemp, setHighTemp] = useState(0);
 	const [lowTemp, setLowTemp] = useState(0);
@@ -39,7 +39,7 @@ const WeatherApp = () => {
 	}
 
 	function error(e) {
-		console.log(`Geolocation Thing: ${e}`);
+		console.log(`Geolocation Error: ${e}`);
 	}
 
 	navigator.geolocation.getCurrentPosition(success, error, options);
@@ -121,7 +121,7 @@ const WeatherApp = () => {
 		<div>
 			<Helmet>
 				<title>Weather App</title>
-				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; min-height: 100vh; margin: 0; padding: 0"/>
+				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; height: 100vh; margin: 0; padding: 0"/>
 			</Helmet>
 			<div className={styles.mainContainer}>
 				<div className={styles.currentWeather}>

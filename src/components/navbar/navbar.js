@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import styles from './navbar.module.css';
 import { Link } from "react-router-dom";
 //Usage:  <CustomNavbar />
@@ -19,7 +19,7 @@ function CustomNavbar(){
     </div>
     
     <div className={styles.Links}>
-      <Link to="/summary" className={styles.Link}>Summary</Link>
+      <Link to="/" className={styles.Link}>Summary</Link>
       <Link to="/installation" className={styles.Link}>Installation</Link>
       <Link to="/tutorial" className={styles.Link}>Tutorial</Link>
       <Link to="/demo" className={styles.Link}>Sample Page</Link>

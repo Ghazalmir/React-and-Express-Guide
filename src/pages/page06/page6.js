@@ -1,6 +1,7 @@
 import styles from './page6.module.css';
 import CreditsCard from './card';
 import { Members, Refs } from './page6data'
+import Footer from '../../components/footer/footer';
 
 
 function Page6(){
@@ -22,7 +23,7 @@ function Page6(){
         {Refs.map (ref => <li> {ref} </li>) }
       </ul>
       </div>
-
+      <Footer />
     </div>
   );
 }

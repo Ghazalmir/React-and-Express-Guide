@@ -1,6 +1,6 @@
 import WeatherApp from "./pages/page04/weather-app";
 import Tutorial from "./pages/page03/tutorial";
-import Btn from "./components/button/button";
+// import Btn from "./components/button/button";
 import CustomNavbar from "./components/navbar/navbar";
 import styles from "./App.module.css";
 import Footer from "./components/footer/footer";
@@ -11,6 +11,7 @@ import Page1 from "./pages/page01/page1";
 import Page2 from "./pages/page02/page2";
 
 function App() {
+
 	return (
 		<div>
 			<CustomNavbar />
@@ -22,7 +23,6 @@ function App() {
 				<Route path="/conslusion" element={<Page5 />} />
 				<Route path="/credits" element={<Page6 />} />
 			</Routes>
-			<Footer />
 		</div>
 	);
 }
