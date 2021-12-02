@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
 import styles from "./day-forecast-card-styles.module.css";
-import axios from "axios";
 
 const DayForecastCard = ({ day, temp, icon }) => {
 	let iconUrl = `https://www.weatherbit.io/static/img/icons/${icon}.png`;

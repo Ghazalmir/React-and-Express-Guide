@@ -1,10 +1,6 @@
 import styles from "./page2.module.css";
-import { Helmet } from "react-helmet";
 
 function Page2() {
-	// const bodyStyles = {
-	//   'backgroundColor': 'blue',
-	// }
 	return (
 		<div className={styles.main}>
 			<div className={styles.all}>

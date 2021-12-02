@@ -6,8 +6,7 @@ const Tutorial = () => {
 		<div>
 			<Helmet>
 				<title>Weather App Tutorial</title>
-				<body style="background-color: white; box-sizing: border-box; height: 100vh; margin: 0; padding: 0; scroll-behavior: smooth;" />
-	
+				{/* <body style="background-color: white; box-sizing: border-box; height: 100vh; margin: 0; padding: 0; scroll-behavior: smooth;" /> */}
 			</Helmet>
 			<div className={styles.mainContainer}>
 				<div className={styles.textContainer}>
