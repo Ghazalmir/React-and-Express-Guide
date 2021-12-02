@@ -2,3 +2,7 @@ h1{
   text-align: center;
   padding-top: 20px;
 }
+
+.main {
+  min-height: 89.2vh;
+}

@@ -11,6 +11,7 @@ import Page1 from "./pages/page01/page1";
 import Page2 from "./pages/page02/page2";
 
 function App() {
+
 	return (
 		<div>
 			<CustomNavbar />
@@ -22,7 +23,7 @@ function App() {
 				<Route path="/conslusion" element={<Page5 />} />
 				<Route path="/credits" element={<Page6 />} />
 			</Routes>
-			<Footer />
+			{/* <Footer /> */}
 		</div>
 	);
 }

@@ -1,13 +1,9 @@
-import { Helmet } from "react-helmet";
+import Footer from "../../components/footer/footer";
 import styles from "./tutorial-styles.module.css";
 
 const Tutorial = () => {
 	return (
 		<div>
-			<Helmet>
-				<title>Weather App Tutorial</title>
-				{/* <body style="background-color: white; box-sizing: border-box; height: 100vh; margin: 0; padding: 0; scroll-behavior: smooth;" /> */}
-			</Helmet>
 			<div className={styles.mainContainer}>
 				<div className={styles.textContainer}>
 					<div className={styles.main}>
@@ -432,6 +428,7 @@ const Tutorial = () => {
 					</section>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };
