@@ -23,7 +23,6 @@ function App() {
 				<Route path="/conslusion" element={<Page5 />} />
 				<Route path="/credits" element={<Page6 />} />
 			</Routes>
-			{/* <Footer /> */}
 		</div>
 	);
 }
