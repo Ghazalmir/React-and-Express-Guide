@@ -8,31 +8,24 @@ body {
   width: 100%;
   background-color: rgb(246, 247, 249);
   position: relative;
-  
 }
 
-.navHeader {
-  display: inline;
-}
-
- .logo {
+.logo {
   display: inline-block;
   font-size: 17px;
   color: rgb(93, 93, 94);
   padding: 14px 5vw;
   text-align: center;
-
 }
 
-.navBtn {
+.Btn {
   display: none;
 }
 
-.navLinks {
+.Links {
   display: inline;
   float: right;
   font-size: 17px;
-
 }
 
 .Link {
@@ -40,8 +33,8 @@ body {
   padding: 14px 8px;
   text-decoration: none;
   color: rgb(127, 125, 129);
-
 }
+
 .lastLink {
   margin-right: 5vw;
 }
@@ -50,12 +43,12 @@ body {
   color: #0642bbb9;
 }
 
-.navCheck {
+.Check {
   display: none;
 }
 
 @media (max-width: 728px) {
-  .navBtn {
+  .Btn {
     display: inline-block;
     position: absolute;
     right: 0px;
@@ -63,25 +56,23 @@ body {
     color: rgb(93, 93, 94);
 
   }
-  .navBtn  label {
+  .Btn  label {
     display: inline-block;
     width: 50px;
     height: 50px;
     padding: 13px;
   }
-  .navBtn  label:hover,.nav  .navCheck:checked ~ .navBtn > label {
+  .Btn  label:hover, .nav  .Check:checked ~ .Btn > label {
     color: #0642bbb9;
-
   }
-  .navBtn label span {
+
+  .Btn label span {
     display: block;
     color: rgb(93, 93, 94);
     font-size: 30px;
     margin-top: -9px;
-
-    
   }
-  .navLinks {
+  .Links {
     position: absolute;
     display: block;
     width: 100%;
@@ -98,11 +89,12 @@ body {
     display: block;
     width: 100%;
   }
-  .navCheck:not(:checked) ~ .navLinks {
+  .Check:not(:checked) ~ .Links {
     height: 0px;
   }
-  .navCheck:checked ~ .navLinks {
-    height: calc(100vh - 50px);
+  .Check:checked ~ .Links {
+    height: 40vh;
     overflow-y: auto;
   }
+
 }
