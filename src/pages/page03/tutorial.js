@@ -18,7 +18,10 @@ const Tutorial = () => {
 							</h1>
 						</div>
 						<div className={styles.imgContainer}>
-							<img src={require("./page3-imgs/demo.png").default} alt="" />
+							<img
+								src={require("./page3-imgs/demo.png").default}
+								alt=""
+							/>
 						</div>
 					</div>
 					<section>
@@ -26,23 +29,21 @@ const Tutorial = () => {
 						<ul>
 							<li>Create our React App</li>
 							<li>Get rid of unnecessary files/folders</li>
+							<li>Create necessary React components</li>
 							<li>
-								Create necessary React components
+								Style components using CSS Module stylesheets
 							</li>
-							<li>Style components using CSS Module stylesheets</li>
-							<li>
-								Lay out the components within the app
-							</li>
+							<li>Lay out the components within the app</li>
 						</ul>
 					</section>
 					<section>
 						<h3>Creating our React App</h3>
 						<p>
-							Let's get started by creating a React
-							application for our project. In a directory of your
-							choice, type "npx create-react-app weather-app" in
-							your terminal. This will generate files/folder and
-							install packages required to run your React app.{" "}
+							Let's get started by creating a React application
+							for our project. In a directory of your choice, type
+							"npx create-react-app weather-app" in your terminal.
+							This will generate files/folder and install packages
+							required to run your React app.{" "}
 						</p>
 						<p>
 							"weather-app" can be replaced with a name of your
@@ -57,7 +58,13 @@ const Tutorial = () => {
 						</p>
 						<p>A new window/tab will open up:</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/react-template.png").default} alt="" />
+							<img
+								src={
+									require("./page3-imgs/react-template.png")
+										.default
+								}
+								alt=""
+							/>
 						</div>
 						<p>This is the default React app template.</p>
 					</section>
@@ -75,7 +82,13 @@ const Tutorial = () => {
 							visited with several files and folders:
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/boilerplate.png").default} alt="" />
+							<img
+								src={
+									require("./page3-imgs/boilerplate.png")
+										.default
+								}
+								alt=""
+							/>
 						</div>
 						<p>
 							What you are seeing is the boilerplate code for a
@@ -84,8 +97,8 @@ const Tutorial = () => {
 							"src" folder.
 						</p>
 						<p>
-							In fact, you can delete the following files
-							as they are somewhat useless for this project:
+							In fact, you can delete the following files as they
+							are somewhat useless for this project:
 						</p>
 						<ul>
 							<li>App.test.js</li>
@@ -95,10 +108,14 @@ const Tutorial = () => {
 						</ul>
 						<p>
 							In the "App.js" file, remove all code inside the
-							first "div" tag. Also remove the logo import at the top. You should be left with this:
+							first "div" tag. Also remove the logo import at the
+							top. You should be left with this:
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_1.png").default} alt="" />
+							<img
+								src={require("./page3-imgs/code_1.png").default}
+								alt=""
+							/>
 						</div>
 						<p>
 							Now that we have cleaned up our project a little, we
@@ -108,7 +125,7 @@ const Tutorial = () => {
 					</section>
 
 					<section>
-						<h3>How React Works (kinda)</h3>
+						<h3>How React Works (Basics)</h3>
 						<p>
 							React makes designing user interfaces (UI) simple by
 							allowing the developer to divide the interface into
@@ -126,20 +143,18 @@ const Tutorial = () => {
 							to be the case.
 						</p>
 						<p>
-							To make a new component, simply create a new .js file
-							with a name of your liking (eg.: navbar.js). Then,
-							inside that file, make a JavaScript function
-							with a name that will define your component "(eg.:
-							const Navbar = ())""{" "}
+							To make a new component, simply create a new .js
+							file with a name of your liking (eg.: navbar.js).
+							Then, inside that file, make a JavaScript function
+							with a name that will define your component
 						</p>
 						<p>
-							Component names should start with a capital
-							letter.
+							Component names should start with a capital letter.
 						</p>
 						<p>
-							Inside your function, add a return statement.
-							Within that return statement, you can start typing
-							some HTML.
+							Inside your function, add a return statement. Within
+							that return statement, you can start typing some
+							HTML.
 						</p>
 						<p>
 							The cool thing about React components is that you
@@ -154,38 +169,45 @@ const Tutorial = () => {
 						</p>
 						<p>
 							During development, when multiple components are
-							used, it is best to keep them in one folder. With that
-							in mind, you should create a "components" folder
-							inside your src folder to hold all your component
-							files.
+							used, it is best to keep them in one folder. With
+							that in mind, you should create a "components"
+							folder inside your src folder to hold all your
+							component files.
 						</p>
 						<p>
 							There's a lot more about React that we can talk
-							about, but for this project I don't believe they are necessary concepts.
+							about, but for this project I don't believe they are
+							necessary concepts.
 						</p>
 					</section>
 					<section>
 						<h3>How we will design our Weather App</h3>
 						<p>
 							Now that we know a little bit about React and
-							components, we can start creating the skeleton of our
-							page and styling as we go.
+							components, we can start creating the skeleton of
+							our page and styling as we go.
 						</p>
 						<p>
 							Create a "weather-app.js" file inside your src
 							folder. This will be a component acting as the main
 							container for the app. Initialize this component
-							file as instructed in the section before.
+							file as instructed in the previous section.
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_2.png").default} alt="" />
+							<img
+								src={require("./page3-imgs/code_2.png").default}
+								alt=""
+							/>
 						</div>
 						<p>
-							Then, in
-							your App.js file, add your component to the return statement:  
+							Then, in your App.js file, add your component to the
+							return statement:
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_3.png").default} alt="" />
+							<img
+								src={require("./page3-imgs/code_3.png").default}
+								alt=""
+							/>
 						</div>
 						<p>
 							For styling our component, we have many options. For
@@ -196,12 +218,11 @@ const Tutorial = () => {
 							stylesheet.
 						</p>
 						<p>
-							You may ask: "isn't that just how CSS works?"
-							Well yes, but also no. In React, when you import
-							mulitple stylesheets, it treats them as one big
-							global stylesheet. This can cause problems as styles
-							from different components can interfere with each
-							other.
+							You may ask: "isn't that just how CSS works?" Well
+							yes, but also no. In React, when you import mulitple
+							stylesheets, it treats them as one big global
+							stylesheet. This can cause problems as styles from
+							different components can interfere with each other.
 						</p>
 						<p>
 							To use CSS modules in this app, create a file named
@@ -237,7 +258,10 @@ const Tutorial = () => {
 							stylesheet and giving them these styles.
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_4.png").default} alt="" />
+							<img
+								src={require("./page3-imgs/code_4.png").default}
+								alt=""
+							/>
 						</div>
 						<p>
 							These get rid of the default margin and padding
@@ -254,7 +278,10 @@ const Tutorial = () => {
 							</a>
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_5.png").default} alt="" />
+							<img
+								src={require("./page3-imgs/code_5.png").default}
+								alt=""
+							/>
 						</div>
 
 						<p>
@@ -266,14 +293,20 @@ const Tutorial = () => {
 							for now.
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_6.png").default} alt="" />
+							<img
+								src={require("./page3-imgs/code_6.png").default}
+								alt=""
+							/>
 						</div>
 						<p>
 							For your main container, give it a CSS grid split
 							into two rows:
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_7.png").default} alt="" />
+							<img
+								src={require("./page3-imgs/code_7.png").default}
+								alt=""
+							/>
 						</div>
 						<p>
 							Inside the "current" div, create 2 new divs with
@@ -286,41 +319,52 @@ const Tutorial = () => {
 							resides in:
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_8.png").default} alt="" />
-						</div>	
+							<img
+								src={require("./page3-imgs/code_8.png").default}
+								alt=""
+							/>
+						</div>
 						<p>
 							This will put divs "currentData" and "extraData"
 							side by side.
 						</p>
 						<p>
-							Inside your "currentData", add 3 divs with classNames
-							"location", "date", and "temp" whose purpose is
-							self-explanatory. Style "currentData" so that it has
-							a grid with 2 rows where the first row is for the
-							location and date and the second is for the current
-							temperature. You can also add a background color
-							seperate from the background color of the main
-							cotainer it if you want.
+							Inside your "currentData", add 3 divs with
+							classNames "location", "date", and "temp" whose
+							purpose is self-explanatory. Style "currentData" so
+							that it has a grid with 2 rows where the first row
+							is for the location and date and the second is for
+							the current temperature. You can also add a
+							background color seperate from the background color
+							of the main cotainer it if you want.
 						</p>
 						<p>
 							You can also add a background hover effect on
 							"currentData".
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_9.png").default} alt="" />
-						</div>	
+							<img
+								src={require("./page3-imgs/code_9.png").default}
+								alt=""
+							/>
+						</div>
 						<p>
 							Inside the "location", "date", and "temp" divs, add
 							either a h2 or h3 and add some filler text such as
 							"Toronto, Ontario" for location, "September 2021"
 							for date, or "2 celsius" for temp. Style the
 							location, date, and temperature how ever you want. I
-							made the font size large, made font bold and played
+							made the font size bold and large while also playing
 							around with the margins:
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_10.png").default} alt="" />
-						</div>	
+							<img
+								src={
+									require("./page3-imgs/code_10.png").default
+								}
+								alt=""
+							/>
+						</div>
 
 						<p>
 							Now moving onto the "extraData" container, style it
@@ -333,16 +377,21 @@ const Tutorial = () => {
 						<p>
 							Inside the "extraData" container, create 4 divs with
 							classNames "feelsLike", "humidity", "windSpeed",
-							"precipitation". Add your own filler text/values
-							for each of these. For styling, make sure the font
-							size is legible and that you are using relative
-							units (rem, em, etc.) so that your the size of your
-							text depends on something (font-size of body,
-							font-size of parent, etc.).
+							"precipitation". Add your own filler text/values for
+							each of these. For styling, make sure the font size
+							is legible and that you are using relative units
+							(rem, em, etc.) so that your the size of your text
+							depends on something (font-size of body, font-size
+							of parent, etc.).
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_11.png").default} alt="" />
-						</div>	
+							<img
+								src={
+									require("./page3-imgs/code_11.png").default
+								}
+								alt=""
+							/>
+						</div>
 						<p>
 							Now let's move onto the "forecast" div. In this we
 							will need to display 7 days worth of imformation.
@@ -368,12 +417,17 @@ const Tutorial = () => {
 							file into dayCard.js.
 						</p>
 						<p>
-							Once you are done the component should look something
-							like this:
+							Once you are done the component should look
+							something like this:
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_12.png").default} alt="" />
-						</div>	
+							<img
+								src={
+									require("./page3-imgs/code_12.png").default
+								}
+								alt=""
+							/>
+						</div>
 						<p>
 							Style the component however you would like. I would
 							recommend you make them rectangles (by changing
@@ -386,16 +440,22 @@ const Tutorial = () => {
 							page size is shrinking or stretching.
 						</p>
 						<p>
-							Now inside the main div of the DayCard component, create 2 divs with
-							classNames "day" and "temperature". Inside those
-							divs you can add a h2, h3, or h4. You do not need to
-							add filler text as the text that will be rendered
-							comes from the props passed in the component. So use
-							the props as the inner HTML for the h2/h3/h4:
+							Now inside the main div of the DayCard component,
+							create 2 divs with classNames "day" and
+							"temperature". Inside those divs you can add a h2,
+							h3, or h4. You do not need to add filler text as the
+							text that will be rendered comes from the props
+							passed in the component. So use the props as the
+							inner HTML for the h2/h3/h4:
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_13.png").default} alt="" />
-						</div>	
+							<img
+								src={
+									require("./page3-imgs/code_13.png").default
+								}
+								alt=""
+							/>
+						</div>
 						<p>
 							Once you are done with the DayCard component, head
 							back over to your weather-app.js file. Inside the
@@ -412,14 +472,19 @@ const Tutorial = () => {
 							of the week and some temperature.
 						</p>
 						<div className={styles.sectionImgContainer}>
-							<img src={require("./page3-imgs/code_14.png").default} alt="" />
-						</div>	
+							<img
+								src={
+									require("./page3-imgs/code_14.png").default
+								}
+								alt=""
+							/>
+						</div>
 						<p>
 							Congratulations! You have designed the basic layout
 							of the Weather App using React. Now of course you
-							can add more styles and/or functionality if you like,
-							but that would make this tutorial painfully long to
-							read and create.
+							can add more styles and/or functionality if you
+							like, but that would make this tutorial painfully
+							long to read and create.
 						</p>
 					</section>
 				</div>
