@@ -7,7 +7,7 @@ import Footer from '../../components/footer/footer';
 function Page6(){
   
   return(
-    <div>  
+    <div className={styles.main}>  
       <h1>Meet the Team!</h1>
       {Members.map (member => (<CreditsCard 
       name={member.name} 
