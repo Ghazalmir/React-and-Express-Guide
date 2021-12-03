@@ -28,12 +28,6 @@ const WeatherApp = () => {
 
 	const updateInfo = async () => {
 
-
-		const locationApiRespone = await axios.get("/api/location-info") ;
-		setLat(locationApiRespone.data.lat);
-		setLong(locationApiRespone.data.lon);
-
-
 		setQuote(`"${getQuote().text}" - ${getQuote().author}`);
 		const weatherApiResponse = await axios.post("/api/weather-info", {
 			longitude: long,
@@ -103,23 +97,23 @@ const WeatherApp = () => {
 	};
 
 	useEffect(() => {
-		// let options = {
-		// 	enableHighAccuracy: true,
-		// 	timeout: 5000,
-		// 	maximumAge: 0,
-		// };
+		let options = {
+			enableHighAccuracy: true,
+			timeout: 5000,
+			maximumAge: 0,
+		};
 
-		// function success(pos) {
-		// 	let crd = pos.coords;
-		// 	setLat(crd.latitude);
-		// 	setLong(crd.longitude);
-		// }
+		function success(pos) {
+			let crd = pos.coords;
+			setLat(crd.latitude);
+			setLong(crd.longitude);
+		}
 
-		// function error(e) {
-		// 	console.log(`Geolocation Error: ${e.message}`);
-		// }
+		function error(e) {
+			console.log(`Geolocation Error: ${e.message}`);
+		}
 
-		// navigator.geolocation.getCurrentPosition(success, error, options);
+		navigator.geolocation.getCurrentPosition(success, error, options);
 
 
 		updateInfo();
