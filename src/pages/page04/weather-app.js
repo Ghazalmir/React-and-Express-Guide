@@ -26,27 +26,16 @@ const WeatherApp = () => {
 	const [quote, setQuote] = useState("");
 
 
-	let options = {
-		enableHighAccuracy: true,
-		timeout: 5000,
-		maximumAge: 0,
-	};
-
-	function success(pos) {
-		let crd = pos.coords;
-		setLat(crd.latitude);
-		setLong(crd.longitude);
-	}
-
-	function error(e) {
-		console.log(`Geolocation Error: ${e}`);
-	}
-
-	navigator.geolocation.getCurrentPosition(success, error, options);
-
 	const updateInfo = async () => {
+
+
+		const locationApiRespone = await axios.get("/location-info") ;
+		setLat(locationApiRespone.data.lat);
+		setLong(locationApiRespone.data.lon);
+
+
 		setQuote(`"${getQuote().text}" - ${getQuote().author}`);
-		const weatherApiResponse = await axios.post("/api/weather-info", {
+		const weatherApiResponse = await axios.post("/weather-info", {
 			longitude: long,
 			latitude: lat,
 		});
@@ -57,7 +46,7 @@ const WeatherApp = () => {
 		setHighTemp(Math.round(weatherApiResponse.data.main.temp_max));
 		setLowTemp(Math.round(weatherApiResponse.data.main.temp_min));
 
-		const forecastApiResponse = await axios.post("/api/forecast-info", {
+		const forecastApiResponse = await axios.post("/forecast-info", {
 			longitude: long,
 			latitude: lat,
 		});
@@ -114,6 +103,25 @@ const WeatherApp = () => {
 	};
 
 	useEffect(() => {
+		// let options = {
+		// 	enableHighAccuracy: true,
+		// 	timeout: 5000,
+		// 	maximumAge: 0,
+		// };
+
+		// function success(pos) {
+		// 	let crd = pos.coords;
+		// 	setLat(crd.latitude);
+		// 	setLong(crd.longitude);
+		// }
+
+		// function error(e) {
+		// 	console.log(`Geolocation Error: ${e.message}`);
+		// }
+
+		// navigator.geolocation.getCurrentPosition(success, error, options);
+
+
 		updateInfo();
 	}, [currTemp]);
 

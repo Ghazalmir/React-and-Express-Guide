@@ -42,6 +42,16 @@ app.post("/forecast-info", async (req, res) => {
     }
 })
 
+app.get("/location-info", async (req, res) => {
+	try {
+		const apiResponse = await axios.get("http://ip-api.com/json/");
+		res.json(apiResponse.data);
+	}
+	catch (e) {
+		console.log(e);
+	}
+})
+
 
 app.listen(PORT, () => {
 	console.log(`Listening on port ${PORT}...`);
