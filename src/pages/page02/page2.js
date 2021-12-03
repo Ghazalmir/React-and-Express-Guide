@@ -16,7 +16,7 @@ function Page2() {
 							from adding it directly to an HTML page or through
 							creating a more integrated app; this tutorial will
 							handle the latter. Creating a React app and running
-							it can be done in three simple commands:
+							it on your machine can be done in three simple commands:
 						</p>
 						<div className={styles.reactPop}>
 							<li>
@@ -56,7 +56,7 @@ function Page2() {
 								</span>
 							</li>
 							<li>
-								Once it is ready to deploy, run{" "}
+								Once it is ready to deploy, run the following:{" "}
 								<span
 									style={{
 										fontFamily: "monospace",
@@ -66,8 +66,27 @@ function Page2() {
 								>
 									npm run build
 								</span>{" "}
-								to create an optimized build of the app in the
-								build folder.
+								<span
+									style={{
+										fontFamily: "monospace",
+										background: "lightgray",
+										padding: 5,
+									}}
+								>
+									npm install -g netlify-cli
+								</span>{" "}
+								<span
+									style={{
+										fontFamily: "monospace",
+										background: "lightgray",
+										padding: 5,
+									}}
+								>
+									netlfiy deploy
+								</span>{" "}
+								It will then ask for a folder to deploy into: enter
+								the path to the "build" folder produced by the
+								"npm run build" command.
 							</li>
 						</div>
 					</div>
@@ -84,6 +103,10 @@ function Page2() {
 					<div className={styles.col4}></div>
 					<div className={styles.col8}>
 						<div>
+							<p className={styles.pStyle}>
+								Express apps can similarly be created and
+								run on your machine using simple instructions:
+							</p>
 							<li>
 								<span style={{ fontSize: 20 }}>1.</span> Create
 								a working directory to hold the application.
@@ -156,6 +179,91 @@ function Page2() {
 									--no-save
 								</span>
 								.
+							</li>
+							<li>
+								To deploy the backend proper, perform the
+								following steps:
+							</li>
+							<li>
+								<span style={{ fontSize: 20 }}>1.</span> Install
+								the Heroku client.{" "}
+								<span
+									style={{
+										fontFamily: "monospace",
+										background: "lightgray",
+										padding: 5,
+									}}
+								>
+									npm install -g heroku
+								</span>
+							</li>
+							<li>
+								<span style={{ fontSize: 20 }}>2.</span> Log into
+								your Heroku account and follow the prompts to
+								create a new SSH key if you have not done so already.{" "}
+								<span
+									style={{
+										fontFamily: "monospace",
+										background: "lightgray",
+										padding: 5,
+									}}
+								>
+									$ heroku login
+								</span>
+							</li>
+							<li>
+								<span style={{ fontSize: 20 }}>3.</span> Use Git
+								to clone the repository's source code to your
+								local machine.{" "}
+								<span
+									style={{
+										fontFamily: "monospace",
+										background: "lightgray",
+										padding: 5,
+									}}
+								>
+									$ heroku git:clone -a cps530-weather-app-server
+								</span>{" "}
+								<span
+									style={{
+										fontFamily: "monospace",
+										background: "lightgray",
+										padding: 5,
+									}}
+								>
+									$ cd cps530-weather-app-server
+								</span>
+							</li>
+							<li>
+								<span style={{ fontSize: 20 }}>4.</span> Deploy
+								your changes to Heroku using Git.{" "}
+								<span
+									style={{
+										fontFamily: "monospace",
+										background: "lightgray",
+										padding: 5,
+									}}
+								>
+									$ git add .
+								</span>{" "}
+								<span
+									style={{
+										fontFamily: "monospace",
+										background: "lightgray",
+										padding: 5,
+									}}
+								>
+									$ git commit -am "make it better"
+								</span>{" "}
+								<span
+									style={{
+										fontFamily: "monospace",
+										background: "lightgray",
+										padding: 5,
+									}}
+								>
+									$ git push heroku master
+								</span>
 							</li>
 						</div>
 					</div>
