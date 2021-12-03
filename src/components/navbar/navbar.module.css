@@ -93,7 +93,7 @@ body {
     height: 0px;
   }
   .Check:checked ~ .Links {
-    height: 40vh;
+    height: 310px;
     overflow-y: auto;
   }
 

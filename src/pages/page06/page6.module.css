@@ -28,7 +28,9 @@ h1 {
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 	max-width: 100%;
 	margin: auto;
+  /*
 	overflow: hidden;
+  */
 	width: 70%;
 }
 .ref h3{
@@ -46,5 +48,5 @@ h1 {
 
 .ref li{
   line-height: 2.5rem;
-
+  overflow-wrap: break-word;
 }
