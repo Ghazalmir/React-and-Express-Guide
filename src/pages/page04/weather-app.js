@@ -122,7 +122,7 @@ const WeatherApp = () => {
 	return (
 		<div>
 			<Helmet>
-				<title>Weather App</title>
+				<title>Weather Forecast App</title>
 				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; height: 100vh; margin: 0; padding: 0"/>
 			</Helmet>
 			<div className={styles.mainContainer}>
