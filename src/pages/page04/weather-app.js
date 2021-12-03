@@ -29,13 +29,13 @@ const WeatherApp = () => {
 	const updateInfo = async () => {
 
 
-		const locationApiRespone = await axios.get("/location-info") ;
+		const locationApiRespone = await axios.get("/api/location-info") ;
 		setLat(locationApiRespone.data.lat);
 		setLong(locationApiRespone.data.lon);
 
 
 		setQuote(`"${getQuote().text}" - ${getQuote().author}`);
-		const weatherApiResponse = await axios.post("/weather-info", {
+		const weatherApiResponse = await axios.post("/api/weather-info", {
 			longitude: long,
 			latitude: lat,
 		});
@@ -46,7 +46,7 @@ const WeatherApp = () => {
 		setHighTemp(Math.round(weatherApiResponse.data.main.temp_max));
 		setLowTemp(Math.round(weatherApiResponse.data.main.temp_min));
 
-		const forecastApiResponse = await axios.post("/forecast-info", {
+		const forecastApiResponse = await axios.post("/api/forecast-info", {
 			longitude: long,
 			latitude: lat,
 		});
