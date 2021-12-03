@@ -16,7 +16,8 @@ function Page2() {
 							from adding it directly to an HTML page or through
 							creating a more integrated app; this tutorial will
 							handle the latter. Creating a React app and running
-							it on your machine can be done in three simple commands:
+							it on your machine can be done in three simple
+							commands:
 						</p>
 						<div className={styles.reactPop}>
 							<li>
@@ -55,8 +56,15 @@ function Page2() {
 									npm start
 								</span>
 							</li>
+							<span
+								style={{
+									fontWeight: "bold",
+								}}
+							>
+								Once it is ready to deploy, run the
+								following in a terminal to deploy to the Netlify hosting service:
+							</span>{" "}
 							<li>
-								Once it is ready to deploy, run the following:{" "}
 								<span
 									style={{
 										fontFamily: "monospace",
@@ -84,9 +92,9 @@ function Page2() {
 								>
 									netlfiy deploy
 								</span>{" "}
-								It will then ask for a folder to deploy into: enter
-								the path to the "build" folder produced by the
-								"npm run build" command.
+								It will then ask for a folder to deploy into:
+								enter the path to the "build" folder produced by
+								the "npm run build" command.
 							</li>
 						</div>
 					</div>
@@ -104,8 +112,8 @@ function Page2() {
 					<div className={styles.col8}>
 						<div>
 							<p className={styles.pStyle}>
-								Express apps can similarly be created and
-								run on your machine using simple instructions:
+								Express apps can similarly be created and run on
+								your machine using simple instructions:
 							</p>
 							<li>
 								<span style={{ fontSize: 20 }}>1.</span> Create
@@ -180,10 +188,14 @@ function Page2() {
 								</span>
 								.
 							</li>
-							<li>
-								To deploy the backend proper, perform the
-								following steps:
-							</li>
+							<span
+								style={{
+									fontWeight: "bold",
+								}}
+							>
+								To deploy the backend, perform the
+								following steps to deploy to the Heroku hosting service:
+							</span>
 							<li>
 								<span style={{ fontSize: 20 }}>1.</span> Install
 								the Heroku client.{" "}
@@ -198,9 +210,10 @@ function Page2() {
 								</span>
 							</li>
 							<li>
-								<span style={{ fontSize: 20 }}>2.</span> Log into
-								your Heroku account and follow the prompts to
-								create a new SSH key if you have not done so already.{" "}
+								<span style={{ fontSize: 20 }}>2.</span> Log
+								into your Heroku account and follow the prompts
+								to create a new SSH key if you have not done so
+								already.{" "}
 								<span
 									style={{
 										fontFamily: "monospace",
@@ -222,7 +235,7 @@ function Page2() {
 										padding: 5,
 									}}
 								>
-									$ heroku git:clone -a cps530-weather-app-server
+									$ heroku git:clone -a [project name]
 								</span>{" "}
 								<span
 									style={{
@@ -231,7 +244,7 @@ function Page2() {
 										padding: 5,
 									}}
 								>
-									$ cd cps530-weather-app-server
+									$ cd [project name]
 								</span>
 							</li>
 							<li>
@@ -262,7 +275,7 @@ function Page2() {
 										padding: 5,
 									}}
 								>
-									$ git push heroku master
+									$ git push heroku main
 								</span>
 							</li>
 						</div>
