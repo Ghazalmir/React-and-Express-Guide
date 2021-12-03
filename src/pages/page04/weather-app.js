@@ -26,25 +26,8 @@ const WeatherApp = () => {
 	const [quote, setQuote] = useState("");
 
 
-	let options = {
-		enableHighAccuracy: true,
-		timeout: 5000,
-		maximumAge: 0,
-	};
-
-	function success(pos) {
-		let crd = pos.coords;
-		setLat(crd.latitude);
-		setLong(crd.longitude);
-	}
-
-	function error(e) {
-		console.log(`Geolocation Error: ${e}`);
-	}
-
-	navigator.geolocation.getCurrentPosition(success, error, options);
-
 	const updateInfo = async () => {
+
 		setQuote(`"${getQuote().text}" - ${getQuote().author}`);
 		const weatherApiResponse = await axios.post("/api/weather-info", {
 			longitude: long,
@@ -114,6 +97,25 @@ const WeatherApp = () => {
 	};
 
 	useEffect(() => {
+		let options = {
+			enableHighAccuracy: true,
+			timeout: 5000,
+			maximumAge: 0,
+		};
+
+		function success(pos) {
+			let crd = pos.coords;
+			setLat(crd.latitude);
+			setLong(crd.longitude);
+		}
+
+		function error(e) {
+			console.log(`Geolocation Error: ${e.message}`);
+		}
+
+		navigator.geolocation.getCurrentPosition(success, error, options);
+
+
 		updateInfo();
 	}, [currTemp]);
 
