@@ -4,6 +4,9 @@ import { Helmet } from "react-helmet";
 
 import DayForecastCard from "./page4-components/day-forecast-card";
 import styles from "./weather-app-styles.module.css";
+import { ToastContainer, toast, Zoom, Bounce } from "react-toastify";
+import { injectStyle } from "react-toastify/dist/inject-style";
+
 const { getQuote } = require("generate-quote");
 
 const WeatherApp = () => {
@@ -97,6 +100,11 @@ const WeatherApp = () => {
 	};
 
 	useEffect(() => {
+		toast.info("To allow the application to deliver personalized weather information you must give your browser permission to access your location!", {
+			position: toast.POSITION.BOTTOM_LEFT,
+			autoClose: 10000,
+			draggable: false,
+		});
 		let options = {
 			enableHighAccuracy: true,
 			timeout: 5000,
@@ -125,6 +133,8 @@ const WeatherApp = () => {
 				<title>Weather Forecast App</title>
 				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; height: 100vh; margin: 0; padding: 0"/>
 			</Helmet>
+			{injectStyle()}
+			<ToastContainer style={{ fontSize: '1.5rem', width: '40rem', fontWeight: 'bold' }} transition={Bounce} />
 			<div className={styles.mainContainer}>
 				<div className={styles.currentWeather}>
 					<div className={styles.tempIconLocationDate}>
