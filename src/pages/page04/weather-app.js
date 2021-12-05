@@ -134,7 +134,7 @@ const WeatherApp = () => {
 				<body style="background-color: #63a4ff; color:white; box-sizing: border-box; height: 100vh; margin: 0; padding: 0"/>
 			</Helmet>
 			{injectStyle()}
-			<ToastContainer style={{ fontSize: '1.5rem', width: '40rem', fontWeight: 'bold' }} transition={Bounce} />
+			<ToastContainer style={{ fontSize: '2vh', width: '45vw', fontWeight: 'bold', marginLeft: '20px', marginBottom: '20px' }} transition={Bounce} />
 			<div className={styles.mainContainer}>
 				<div className={styles.currentWeather}>
 					<div className={styles.tempIconLocationDate}>
