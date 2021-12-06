@@ -43,6 +43,9 @@ function Page1() {
 								Awareness rating is a consistent 100% across all
 								five years
 							</li>
+							<li>
+								React is mostly used for any type of website that requires a user interface that interacts with the client (ecommerce, portfolio, social media)
+							</li>
 						</ul>
 						<h3 className={styles.expressWord}>Express</h3>
 						<p className={styles.pStyle}>
@@ -78,6 +81,7 @@ function Page1() {
 								As of March 2021, Express is ranked 4th, not too
 								far behind the 3rd and 2nd
 							</li>
+							<li>While Express.js is used mostly to create backend logic for websites, it can also render dynamic pages through routing</li>
 						</ul>
 					</div>
 

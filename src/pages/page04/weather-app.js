@@ -102,7 +102,7 @@ const WeatherApp = () => {
 
 	useEffect(() => {
 		if (alertCount < 1) {
-			toast.info("To allow the application to deliver personalized weather information you must give your browser permission to access your location!", {
+			toast.info("To allow the application to deliver personalized weather information you must give your browser permission to access your location. Once given the permission, remember to refresh your browser if the content is not showing!", {
 				position: toast.POSITION.BOTTOM_LEFT,
 				autoClose: 10000,
 				draggable: false,
