@@ -25,6 +25,7 @@ function Page1() {
 								<li>Dropbox</li>
 								<li>Salesforce</li>
 								<li>Reddit</li>
+								<li>...and more multi-page sites</li>
 							</ul>
 						</div>
 						<ul>
@@ -52,6 +53,7 @@ function Page1() {
 							<li>Stack Exchange</li>
 							<li>Intuit</li>
 							<li>PLAID</li>
+							<li>...and more e-commerce sites</li>
 						</ul>
 
 						<ul>
