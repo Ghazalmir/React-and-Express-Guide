@@ -14,7 +14,7 @@ const Members = [
     name: 'Syed Wahaj Haider',
     img: Wahaj,
     order: 2 ,
-    res: ['Page 3', 'Page 4', 'Researching the strengths of the chosen frameworks for the first page', 'Citing the external resources they have used on their part', 'Writing their opinion for conclusion', 'Testing and proofreading the code and the content (shared responsibility)', 'Checking responsiveness of all pages (shared responsibility)', 'Deploying the website', 'Creating Express.js backend server for Page 4'] ,
+    res: ['Page 3', 'Page 4', 'Researching the strengths of the chosen frameworks for the first page', 'Citing the external resources they have used on their part', 'Writing their opinion for conclusion', 'Testing and proofreading the code and the content (shared responsibility)', 'Checking responsiveness of all pages (shared responsibility)', 'Deploying the frontend with Netlify and backend with Heroku', 'Creating Express.js backend server for Page 4'] ,
     github: 'https://github.com/Wazotik'
   }, 
   {
