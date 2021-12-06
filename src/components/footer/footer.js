@@ -15,7 +15,7 @@ function Footer(){
       <Link to="/demo" className={styles.Link}>Sample Page</Link>
       <Link to="/conslusion" className={styles.Link}>Conclusion</Link>
       <Link to="/credits" className={styles.Link}>Credits</Link>
-      <Link to="#" className={styles.Link}>View Project on Github</Link>
+      <a href="https://github.com/Ghazalmir/React-and-Express-Guide" className={styles.Link}>View Project on Github</a>
 
     </div>
     </div>

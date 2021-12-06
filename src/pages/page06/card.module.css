@@ -89,6 +89,7 @@
 
 .res li {
   margin-bottom: 10px;
+  line-height: 1.5rem;
 }
 
 .secondCard .img{
@@ -99,7 +100,7 @@
   order: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 850px) {
   .card{
     flex-direction: column;
     justify-content: center;

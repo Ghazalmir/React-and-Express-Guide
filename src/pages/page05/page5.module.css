@@ -8,6 +8,7 @@ h1{
   animation: fadeInAnimationCard ease-out 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  padding-bottom: 30px;
 }
 
 @keyframes fadeInAnimationCard {
