@@ -27,6 +27,7 @@ const WeatherApp = () => {
 	const [location, setLocation] = useState("");
 
 	const [quote, setQuote] = useState("");
+	const [alertCount, setAlertCount] = useState(0);
 
 
 	const updateInfo = async () => {
@@ -100,11 +101,14 @@ const WeatherApp = () => {
 	};
 
 	useEffect(() => {
-		toast.info("To allow the application to deliver personalized weather information you must give your browser permission to access your location!", {
-			position: toast.POSITION.BOTTOM_LEFT,
-			autoClose: 10000,
-			draggable: false,
-		});
+		if (alertCount < 1) {
+			toast.info("To allow the application to deliver personalized weather information you must give your browser permission to access your location!", {
+				position: toast.POSITION.BOTTOM_LEFT,
+				autoClose: 10000,
+				draggable: false,
+			});
+			setAlertCount(alertCount + 1);
+		}
 		let options = {
 			enableHighAccuracy: true,
 			timeout: 5000,

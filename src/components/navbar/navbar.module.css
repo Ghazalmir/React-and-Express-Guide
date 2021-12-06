@@ -12,10 +12,11 @@ body {
 
 .logo {
   display: inline-block;
-  font-size: 17px;
+  font-size: 20px;
   color: rgb(93, 93, 94);
   padding: 14px 5vw;
   text-align: center;
+  font-weight: bold;
 }
 
 .Btn {
