@@ -9,7 +9,7 @@ function CustomNavbar(){
 <div className={styles.nav}>
     <input type="checkbox" id="navCheck" className={styles.Check}/>
       <div className={styles.logo}>
-        LOGO
+        React and Express Guide
       </div>
 
     <div className={styles.Btn}>
