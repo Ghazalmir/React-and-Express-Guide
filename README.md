@@ -2,9 +2,9 @@
 A ReactJS and Express.js tutorial website (including a Weather Forecast Application as a sample program) made with made with ReactJS, Express.js, HTML, CSS, and Javascript as the final project of CPS530 (Web Systems Development) at Ryerson University.
 
 ### Table of Contents:
-* ⚙️&ensp;[Website Content](https://github.com/Ghazalmir/React-and-Express-Guide#-website-content)
+* ⚙️&ensp;[Website Content](https://github.com/Ghazalmir/React-and-Express-Guide/blob/main/README.md#%EF%B8%8F--website-content)
 * 🛠&ensp;[Technologies Used](https://github.com/Ghazalmir/React-and-Express-Guide#-technologies-used)
-* 🔗&ensp;[Credits and References](https://github.com/Ghazalmir/React-and-Express-Guide#--credits-and-references)
+* 🔗&ensp;[Credits and References](https://github.com/Ghazalmir/React-and-Express-Guide#-credits-and-references)
 * 🔒&ensp;[License](https://github.com/Ghazalmir/React-and-Express-Guide#-license)
 
 ## ⚙️  Website Content
