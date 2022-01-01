@@ -19,7 +19,7 @@ A ReactJS and Express.js tutorial website (including a Weather Forecast Applicat
 | Front-End  | Back-End | Deployment | 
 | :-------------: | :-------------: | :-------------: |
 | ReactJS | Express.js | Netlify | 
-| HTML | JavaScript | 
+| HTML | JavaScript | Heroku |
 | CSS | Axios | 
 
 The full list of frameworks/npm packages used for the website can be found [here](https://github.com/Ghazalmir/React-and-Express-Guide/blob/main/package.json) and the ones used in the weather app [here](https://github.com/Ghazalmir/React-and-Express-Guide/blob/main/weather-app-backend/package.json).
